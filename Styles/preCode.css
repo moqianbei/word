@@ -1,0 +1,55 @@
+/* ------- 代码段 -------- */
+
+pre {
+	margin: .5em 0;
+	padding: .5em;
+	background-color: #272822;
+	color:#aaa;
+}
+
+
+/* 代码前数字 */
+pre ol>li {
+
+}
+
+
+/* 代码实体字符 */
+pre .characterEntities {
+
+}
+
+/* 代码标签 */
+pre .label {
+
+}
+
+/* 代码属性 */
+pre .property {
+
+}
+
+/* 代码值 */
+pre .value {
+
+}
+
+/* 代码注释 */
+pre .note {
+
+}
+
+/* 代码颜色 */
+pre .color {
+
+}
+
+/* 代码数字 */
+pre .number {
+
+}
+
+
+
+
+

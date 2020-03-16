@@ -1,0 +1,139 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CSS3内容处理</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-size: 12px;
+        color: #333;
+        font-family: "Microsoft Yahei";
+    }
+
+    h3 {
+        counter-increment: myCounter;
+        margin-left: 5px;
+        line-height: 24px;
+    }
+
+    h3:before {
+        content: counter(myCounter, decimal-leading-zero);
+        padding: 1px 5px;
+        margin-right: 10px;
+        background: #F63;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        color: #FFF
+    }
+
+    p {
+        counter-increment: myCounter1;
+        margin-left: 15px;
+        line-height: 24px;
+    }
+
+    p:before {
+        content: "第"counter(myCounter1)"章：";
+    }
+
+    span {
+        counter-increment: myCounter2;
+        margin-left: 15px;
+        line-height: 24px;
+        counter-reset: sub;
+    }
+
+    span:before {
+        content: counter(myCounter2, upper-alpha)"、";
+        color: #090;
+        font-weight: bold;
+    }
+
+    h4 {
+        counter-increment: sub;
+        margin-left: 20px;
+        line-height: 24px;
+    }
+
+    h4:before {
+        content: counter(sub)"、";
+        color: #909;
+        font-weight: bold;
+    }
+
+    /**
+decimal-leading-zero        0开头的数字标记。(01, 02, 03, 等。)
+lower-roman        小写罗马数字(i, ii, iii, iv, v, 等。)
+upper-roman        大写罗马数字(I, II, III, IV, V, 等。)
+lower-alpha        小写英文字母The marker is lower-alpha (a, b, c, d, e, 等。)
+upper-alpha        大写英文字母The marker is upper-alpha (A, B, C, D, E, 等。)
+lower-greek        小写希腊字母(alpha, beta, gamma, 等。)
+lower-latin        小写拉丁字母(a, b, c, d, e, 等。)
+upper-latin        大写拉丁字母(A, B, C, D, E, 等。)
+**/
+
+
+    /**
+元素{counter-increment:定义计数器名;}/*首先定义一个计数器的名字，名字可随便起，就像js中定义变量一样*/
+    /*元素:before{content:counter(引用计数器名);}/*在此处引用计数器，然后将其计数器插入即可实现连续编号*/
+    /*元素{counter-increment:index;}/*首先定义一个计数器的名字，名字可随便起，就像js中定义变量一样*/
+    /*元素:before{content:("第"counterindex"章：");}/*在此处引用计数器，然后将其计数器插入，并将固定的文字在其中加入与计数器进行拼接，即可实现带有固定文字格式的连续编号*/
+    </style>
+</head>
+
+<body>
+    <h3>大标题</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <span>消息的测试</span>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+
+    <h3>大标题</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <span>消息的测试</span>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <span>消息的测试</span>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+    <h3>大标题：前端开发网(W3Cfuns.com)！</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <span>消息的测试</span>
+    <h4>子标题展示</h4>
+    <h4>子标题展示</h4>
+
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <span>消息的测试</span>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+    <h3>大标题：</h3>
+    <p> web前端开发起飞区，Web前端开发高手聚集地，教程、资源完全免费！</p>
+</body>
+
+</html>

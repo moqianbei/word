@@ -1,0 +1,2933 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Word论文排版</title>
+    <link rel="stylesheet" href="Styles/Stylesheet.css" />
+
+</head>
+<!-- <base target="_blank" /> -->
+
+
+<body>
+
+    <article>
+
+        <section class="cover">
+
+            <span class="version"><span class="dot"></span>网页版<span class="dot"></span></span>
+            <div>
+                <h1><span>Microsoft Word</span><br /><span>论文排版</span>——<span>完全指南</span></h1>
+                <hr />
+                <p>系统学习论文排版</p>
+                <p>详细介绍在Microsoft Word中进行排版论文时，<br />你需要掌握的基础知识、常用操作，让你少走弯路。</p>
+            </div>
+
+            <p><span class="author"><a href=""><img src="Images/莫浅北.png"  Alt ="莫浅北"/></a></span>编著</p>
+
+        </section>
+
+        <section>
+
+            <h2 class="description" id="Copyright">版权声明</h2>
+
+            <p>本书的内容是我参考了网络上公开的资料信息，同时经过了反复摸索得出的经验。本着互联网共享精神，现免费公之于网络，请不要把本书用于商业用途，谢谢！</p>
+
+            <p>本书由微信公众号「未央暮城」×「Tools指南」共同作者<span class="author">莫浅北</span>编辑发布</p>
+
+        </section>
+
+
+        <section>
+            <h2 class="description">前言</h2>
+            <progress></progress>
+
+            <h3>出书原因</h3>
+            <progress></progress>
+            <ul>
+                <li>目前网络上能找到的Word论文排版技巧，如知乎专栏、网易云课堂等地的回答和教程，都只是粗略地讲解一些技巧，缺乏系统，而且同质化比较严重。</li>
+
+                <li>我也经历过毕业论文排版的洗礼，深知其中的苦楚，想让后来者少走一些弯路。</li>
+
+                <li>另外，整理一下自己的知识体系，对学习的知识进行输出。</li>
+            </ul>
+
+
+            <h3>适合人群</h3>
+            <progress></progress>
+
+            <ul>
+                <li>即将写论文的人；</li>
+                <li>从事文档排版工作的人；</li>
+                <li>希望了解一些关于Word技巧的人</li>
+            </ul>
+
+
+            <h3>如何阅读</h3>
+            <progress></progress>
+
+            <p>本书根据写作过程进行编写，是我经过实际测试后才确定的，你直接按照顺序进行阅读即可。</p>
+
+            <p>另外，还会有一些比较常用的操作，比如快捷键的使用等，我将其整理在<a href="">其他辅助技巧</a>这部分，这部分可以大大提高你的排版效率，如果有时间，最好先对其有一个了解。</p>
+
+            <h3>注意事项</h3>
+            <progress></progress>
+            <ul>
+                <li>这个教程并没有一些特别基础的操作，比如设置文字的字体、字号等。如果这些基本的操作你还不会，建议先学习一下Word的基础操作。</li>
+
+                <li>这本书中并不包含如何查找资料等内容，主要是用Word进行排版。</li>
+
+                <li>本书中所采用的版本是Microsoft Word 2019 版本，界面可能与低版本不同。请尽量使用2013及以上版本，否则操作可能不顺畅。</li>
+
+                <li>考虑到大家的使用时的设备可能是手机端，因此该版本为无动图版本。之后如果反响不错，会发布动图版本，让你更好地看清每一步的操作。</li>
+            </ul>
+
+            <h3>其他碎碎念</h3>
+            <progress></progress>
+
+            <p>本书会不定期更新，可点击<span class="webAdress"><a href="https://pan.baidu.com/s/1p08wZZmG_eZIhwAFRyh0ZA">这里</a></span>，提取码: xdkb</p>
+
+            <p>我希望大家看完我这本书，不仅仅学到如何用Microsoft Word对论文进行排版，还可以学习一些比较系统的做事行为。</p>
+
+            <br />
+            <br />
+            <p style="text-align:right"><span class="author"><a href=""><img src="Images/莫浅北.png"  alt ="莫浅北" style="margin-right:.5em;"/></a></span><br />2018年12月4日</p>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="description" id="Acknowledgments">致谢</h2>
+            <progress></progress>
+
+            <p>本书借鉴了很多知乎账号和网易云课堂的免费课程分享的知识点，在此表示感谢，他们主要有：</p>
+
+            <ul>
+                <li><a href=""></a></li>
+
+                <li><a href=""></a></li>
+
+                <li><a href=""></a></li>
+
+                <li><a href=""></a></li>
+
+                <li><a href=""></a></li>
+
+                <li><a href=""></a></li>
+            </ul>
+
+        </section>
+
+
+        <section id="mainContent">
+
+            <h2>本书说明</h2>
+            <progress></progress>
+
+            <h3>术语解释</h3>
+            <progress></progress>
+
+            <h4>界面名称</h4>
+
+            <p>简单介绍一下各个界面的名称，后续会直接使用这些术语表达：</p>
+            <figure class="img">
+                <img src="Images/界面名称.png" alt="界面名称" />
+                <figcaption>界面名称</figcaption>
+            </figure>
+
+            <h4>操作表示方法</h4>
+
+            <p>本书的操作路径，统一使用如下的表示方法：<span class="setPath">『主|工具选项卡』-「组」- 【(下拉)命令】|【扩展】</span>，分别对应如下图的位置：</p>
+            <figure class="img">
+                <img src="Images/操作位置.jpg" Alt="操作位置" />
+                <figcaption>操作位置</figcaption>
+            </figure>
+
+            <p>扩展就是在某个组右下角的类三角符号。</p>
+
+
+            <h4>鼠标形态</h4>
+
+            <p>鼠标的操作有很多，这里事先声明一下操作规范，免得后面的文字有歧义：</p>
+
+            <p>右击：鼠标右键单击一次</p>
+            <p>单击/左击：鼠标左键单击一次</p>
+            <p>双击：鼠标左键快速单击两次</p>
+            <p>向上/下滚动：鼠标滚轮向上/下滚动</p>
+            <p>框选：通过鼠标拖动选择对应多个文本、多个图片等</p>
+            <p>点选：鼠标单击选择对应文本框、图片、公式等</p>
+
+
+            <h2>开写准备</h2>
+            <progress></progress>
+
+            <div class="chapterContent">
+                <p>开始进行写作前的准备</p>
+            </div>
+
+            <h3>保存设置</h3>
+            <progress></progress>
+
+            <p>保存主要分为两类，一种是基于文档的<b>具体内容</b>的保存，另一种是基于文档的<b>文件</b>的保存，下面具体来介绍一下：</p>
+
+            <p class="warning">如果你的文章内容丢失或是文件丢失\损坏，打击将是毁灭性的。请一定重视这部分。</p>
+
+            <h4>具体内容的保存</h4>
+
+            <h5>（一）软件：设置自动定时保存</h5>
+
+            <p>避免因停电、电脑突然卡死等造成文件内容丢失的情况，我们可以在<span class="setPath">『文件选项卡』-「选项组」- 【Word选项—保存】</span>进行设置，让Word每隔一段时间自动保存一次。</p>
+
+            <figure class="img">
+                <img src="Images/自动保存.png" Alt="自动保存" />
+                <figcaption>自动保存</figcaption>
+            </figure>
+
+            <p class="warning">自动保存时间，太长不能起到保护的作用，太短影响正常使用，推荐5~10分钟。</p>
+
+            <h5>（二）自己：手动保存</h5>
+
+            <p>虽然软件会定时进行保存，遇到突发情况，可以从恢复区调取出之前保存的文件，但为了防止大量信息的丢失，我们还是要养成随手保存的习惯，在有大的改动时<kbd>Ctrl + S</kbd>手动保存。</p>
+
+
+            <h4>文档文件的保存</h4>
+
+            <h5>（一）分章节保存</h5>
+
+            <p>通常情况下，我们的论文都不是一次写完的，需要一步一步完成，而且这些内容都会汇合在同一文档文件中。</p>
+            <p>但一些误操作，可能会删除我们之前文稿的内容，而我们通常不会关注之前写过的内容，直到最后整理时才发现内容的丢失。</p>
+            <p>为避免这种风险，建议你将各个章节分别进行保存，这样既方便查看，也方便编辑（打开速度会更快），最后全部写完后使用<b>合并文档</b>功能或主控文档功能即可。</p>
+
+            <p>合并文档设置路径：<span class="setPath">『插入选项卡』-「文本组」- 【对象下拉选项——文件中的文字】</span></p>
+
+            <figure class="img">
+                <img src="Images/插入文件中的文字.png" Alt="插入文件中的文字" />
+                <figcaption>插入文件中的文字</figcaption>
+            </figure>
+            <p class="tips">良好的文件命名顺序，对之后的文档合并至关重要</p>
+
+            <h5>（二）多地保存</h5>
+
+            <p>下面的这些要求，可以按需选择，毕竟全部出现问题的概率太小了。</p>
+
+            <h6>1) 多磁盘分区保存</h6>
+
+            <p>由于电脑可能会出现各种问题，而对这些问题的一般的解决方法是恢复出厂设置或重装，而这些解决方法会抹除你系统盘内的文件。所以你最好将你的文章保存在非系统盘分区中，比如E盘。</p>
+
+            <h6>2) 保存到移动设备中</h6>
+
+            <p>为了避免出现电脑硬盘出现故障，你可以将文件保存到你的移动设备中（包括但不限于手机、U盘、移动硬盘）</p>
+
+            <h6>3) 云盘同步备份</h6>
+
+            <p>将文件同步到云端，如果怕信息泄露，可以将文件设置密码压缩后再上传。</p>
+
+            <p>比如一些我们常用的云盘工具：</p>
+
+            <figure class="img">
+                <img src="Images/网盘.png" Alt="网盘" />
+                <figcaption>网盘</figcaption>
+            </figure>
+
+            <!-- END H3 -->
+
+
+
+
+            <h3>首选项设置</h3>
+            <progress></progress>
+
+            <p>对软件的默认选项的设置，是很有必要的，它能让你更好地进行文章内容的输出。</p>
+
+            <h4>高级选项设置</h4>
+
+            <p>打开路径<span class="setPath">『文件选项卡』-「选项」- 【高级】</span>，做如下设置：</p>
+            <figure class="img">
+                <img src="Images/选项高级设置.jpg" Alt="选项高级设置" />
+                <figcaption>选项高级设置</figcaption>
+            </figure>
+            <p>简单解释一下上面这样设置的原因：</p>
+
+            <h5>（一） 从其他程序粘贴：仅保留文本</h5>
+
+            <p>这部分一般是指从浏览器网页中进行粘贴，或者你使用OCR技术复制的文字，由于这些文字是为显示浏览而出现的（与下载后的文件不同），他们的格式复制到Word中会发生错乱。使用此选项，就省去了你用记事本去除格式的操作。</p>
+
+            <h5>（二） 将图片插入/粘贴为：嵌入型</h5>
+
+            <p>将图片设置为嵌入型，可以理解为图片就是一小部分文字，按照文字的方式对图片进行设置就可以了。如果选择其他的方式，在增删内容时，图片的位置会错乱，会出现文不对图的情况，不利于之后的排版。</p>
+
+            <p class="tips">高级选项亦或者说选项的设置并不仅仅包括这些，但其他的使用默认配置就好了，一般不需要修改。</p>
+
+
+            <h4>快速访问工具栏</h4>
+
+            <p>快速访问工具栏，是一个可自定义区域，我们可以在功能区上方或下方看到：</p>
+
+            <figure class="img">
+                <img src="Images/快速访问工具栏.png" Alt="快速访问工具栏" />
+                <figcaption>快速访问工具栏</figcaption>
+            </figure>
+
+            <p>可以自行设置其位置，主要添加一些<b>比较常用但使用选项卡查找很麻烦，又没有快捷键的功能</b>，比如添加图片、绘制文本框。</p>
+            <p>我们可以在你需要添加的命令按钮上右键，选择【添加到快速访问工具栏】即可：</p>
+            <figure class="img">
+                <img src="Images/添加到快速访问工具栏.png" Alt="添加到快速访问工具栏" />
+                <figcaption>添加到快速访问工具栏</figcaption>
+            </figure>
+
+            <p id="TuWenJi">当然，还有一类在功能区无法找到的命令，比如自动图文集（后面会用到），我们可以在<span class="setPath">『文件选项卡』—「选项」— [快速工具栏] — 不在功能区中的命令 —【添加自动图文集】</span>，将其添加到快速访问工具栏。</p>
+
+            <figure class="img">
+                <img src="Images/添加自动图文集.jpg" Alt="添加自动图文集" />
+                <figcaption>添加自动图文集</figcaption>
+            </figure>
+
+
+            <h4>功能区自定义</h4>
+            <p>这部分仅为我的个人使用习惯，你可以预览下，可以选择忽略。</p>
+            <p>在论文排版写作过程中，需要不断调整，这就需要在各个选项卡中切换，感觉每次操作都是在浪费时间，而自定义功能区就可以将所有常用的功能，集中在一起。</p>
+
+            <p>在<span class="setPath">『文件选项卡』—「选项」— 【自定义功能区】</span>添加/删除/隐藏对应的功能即可。</p>
+            <figure class="img">
+                <img src="Images/自定义功能区.png" Alt="自定义功能区" />
+                <figcaption>自定义功能区</figcaption>
+            </figure>
+
+            <p class="tips">主选项卡一直存在，工具选项卡在你选择对应的元素才会出现。文件选项卡不可隐藏。</p>
+
+            <p>这里，我将常用且无法通过简单快捷键实现的功能，集合在了一起：</p>
+
+            <figure class="img">
+                <img src="Images/我的选项卡.png" Alt="我的选项卡" />
+                <figcaption>我的选项卡</figcaption>
+            </figure>
+
+            <p>如果你想使用我的个人配置，可以直接导入以下文件：</p>
+
+            <p><span class="file"><a href="资源/莫浅北的自定义.exportedUI">莫浅北的自定义.exportedUI</a></span></p>
+
+
+            <h4>插入/改写状态切换</h4>
+
+            <p>如果你在录入后面的内容时，前面的内容被吞了，这时你需要更改一下Ins模式。</p>
+
+            <p>在状态栏中，如果是「改写」，单击一下切换为「插入」即可。</p>
+            <figure class="img">
+                <img src="Images/插入改写状态.jpg" Alt="插入改写状态" />
+                <figcaption>插入改写状态</figcaption>
+            </figure>
+
+            <p class="tips">按<kbd>Ins</kbd>也可以直接切换插入/改写状态。</p>
+
+            <!-- END H3 -->
+
+
+            <h3>各部分样式设置</h3>
+            <progress></progress>
+
+            <h4>纸张页面设计</h4>
+
+            <p>页面设置，简单来说，就是你纸张大小、各个部分边距的设置。因为页面会影响你整体文章的视觉效果，而且还关系到之后的打印输出等，所以一定要在开始写之前，首先需要按照论文格式要求设置纸张和页面布局。</p>
+
+            <p>打开路径<span class="setPath">『布局选项卡』-「页面设置」- 【扩展三角】</span>，详见下图：</p>
+
+            <figure class="img">
+                <img src="Images/页面设置扩展三角.jpg" Alt="页面设置扩展三角" />
+                <figcaption>页面设置扩展三角</figcaption>
+            </figure>
+
+            <p>设置纸张大小及方向：</p>
+            <figure class="img">
+                <img src="Images/纸张设置.jpg" Alt="纸张设置" />
+                <figcaption>纸张设置</figcaption>
+            </figure>
+
+            <p>根据要求设置页边距：</p>
+            <figure class="img">
+                <img src="Images/页边距设置.jpg" Alt="页边距设置" />
+                <figcaption>页边距设置</figcaption>
+            </figure>
+
+            <p class="warning">在图片下方红色方框的地方，请选择整篇文档。<br />因为论文最终会打印装订成册，对于纸张的要求都是统一的，如果有特殊要求（比如附录图片中可以减少页边距等等），可以之后再进行特殊处理。</p>
+
+
+            <h4>特殊文字样式设置</h4>
+
+            <p>有些文字的样式，与其他大部分的内容都不一样，而且比较灵活，是比较特殊的格式，比如我们封面页的文字。</p>
+
+            <figure class="img">
+                <img src="Images/论文封面.png" Alt="论文封面" />
+                <figcaption>论文封面</figcaption>
+            </figure>
+
+            <p>由于我们所有文字在录入到Word中，其实都会默认应用“正文”样式，一旦这个样式更改，我们的所有样式都会随之更改。</p>
+
+            <p>因此，我们需要创建一个独立的样式，在其他样式修改后，它这部分能够不变动。</p>
+
+            <p>在<span class="setPath">『开始选项卡』-「样式」- 【下拉列表—创建样式】</span></p>
+            <figure class="img">
+                <img src="Images/创建样式.jpg" Alt="创建样式" />
+                <figcaption>创建样式</figcaption>
+            </figure>
+
+            <p>命名为「不变基准样式」，然后将其中的样式基准改为“无样式”：</p>
+            <figure class="img">
+                <img src="Images/特殊样式.png" Alt="特殊样式" />
+                <figcaption>特殊样式</figcaption>
+            </figure>
+
+            <p class="tips">如果你不想这样设置，可以将封面单独建立一个文件。</p>
+
+            <p>好了，开始写作前的准备工作，到这里基本就完成了，简单总结一下：</p>
+
+            <ol class="card">
+                <li>保存设置（防止意外）</li>
+                <li>软件自动保存</li>
+                <li>重大修改手动保存</li>
+                <li>分章节保存</li>
+                <li>多地方保存（非系统盘、移动设备、云盘）</li>
+                <li>软件默认配置（更好地使用）</li>
+                <li>剪切、复制和粘贴</li>
+                <li>纸张页面设置</li>
+                <li>特殊样式设置</li>
+            </ol>
+
+            <!-- 这部分之后做成图片 -->
+
+
+            <h2>开始录入</h2>
+            <progress></progress>
+
+
+            <div class="chapterContent">
+
+                <p>接下来要真正开始写作了。</p>
+
+                <p>我们在写作时，不仅仅会通过键盘录入，还会从其他程序粘贴一些内容到我们的Word中，这其中会遇到很多小问题。</p>
+
+                <p>不同的人有不同的操作习惯，有人习惯全部写完再统一排版，有的人喜欢一边录入一边排版。</p>
+
+                <p>根据我的经验来看，后者的效率可能会更高。因为写论文周期很长，如果等论文全部写完，需要在录入时做好标记，写完排版时，可能会忘记这是哪级标题；还有参考文献的引用也是一个问题，由于参考文献可能有很多，在插入过程中，可能出现很多个1的情况，对后期查找到对应的文献很不友好。</p>
+
+
+                <p>为方便大家查阅，我按照形式分为了文本、图片、表格、公式等四个部分。</p>
+
+                <p class="tips">在查阅时，需要说明的是，“如图1-1”这类，虽然是文字，但属于图片部分。</p>
+
+            </div>
+
+            <h3>文本相关</h3>
+            <progress></progress>
+
+            <h4>生僻字输入</h4>
+
+            <p>我们在搜集素材时，可能会碰到生僻字，但无法复制，这时我们可以使用下面的这些方法：</p>
+
+            <h5>（一）笔划输入法</h5>
+
+            <p>你可以使用一些通过笔画输入而不是读音的输入法，如五笔输入法。</p>
+
+            <h5>（二）手写输入</h5>
+
+            <p>你可以使用输入法的手写功能，比如搜狗的手写输入，当然，你需要在有网络的条件下下载手写插件。</p>
+
+            <figure class="img">
+                <img src="Images/搜狗手写输入.jpg" Alt="搜狗手写输入" />
+                <figcaption>搜狗手写输入</figcaption>
+            </figure>
+
+            <h5>（三）输入法u模式</h5>
+            <p>现在的输入法有一个生僻字模式，你只要输入一个“u”，之后输入生僻字中的单字，比如这个<ruby>
+                    <rb>武</rb>
+                    <rp>（</rp>
+                    <rt>wǔ</rt>
+                    <rp>）</rp>
+                    <rb>曌</rb>
+                    <rp>（</rp>
+                    <rt>zhào</rt>
+                    <rp>）</rp>
+                </ruby>的曌字，由“明”和“空”组成。我们可以中文输入状态下，输入“umingkong”就可以找到这个字了。</p>
+            <figure class="img">
+                <img src="Images/输入法u模式.jpg" Alt="输入法u模式" />
+                <figcaption>输入法u模式</figcaption>
+            </figure>
+
+            <p class="tips">如果想使用u模式，需要切换到全拼输入状态</p>
+
+
+            <h5>（四）OCR软件</h5>
+
+            <p>自己不认识，不代表机器不认识，如果你有识别率比较高的OCR软件，就可以进行识别录入。由于生僻字的字库比较少，这种方法的识别效果不是特别好。OCR更适合识别大段不可复制的文字。</p>
+
+            <p>电脑端推荐天若OCR和panda OCR这两款软件，当然，QQ所带有的截图工具也有这个功能。</p>
+
+
+            <h4>标点符号输入</h4>
+
+            <h5>（一）键盘录入</h5>
+            <p>很多符号是可以直接从键盘上录入，比如句号、逗号等。但由于键盘位置有限，一些标点的录入方式并未在键盘中进行标注，这里就列举一下：</p>
+
+            <table>
+                <caption>常用中文符号</caption>
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>符号</th>
+                        <th>键盘</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="10">注：输入法需切换到中文状态下</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>省略号</td>
+                        <td>……</td>
+                        <td><kbd>Shift + 6</kbd></td>
+                    </tr>
+                    <tr>
+                        <td>间隔符</td>
+                        <td>·</td>
+                        <td><kbd>Tab</kbd>上方的键</td>
+                    </tr>
+                    <tr>
+                        <td>中国钱币符</td>
+                        <td>￥</td>
+                        <td><kbd>Shift + 4</kbd></td>
+                    </tr>
+                    <tr>
+                        <td>顿号</td>
+                        <td>、</td>
+                        <td><kbd>Backspace</kbd>键周围的反斜杠<kbd>\</kbd></td>
+                    </tr>
+                    <tr>
+                        <td>前书名号</td>
+                        <td>《</td>
+                        <td><kbd>Shift + ,</kbd></td>
+                    </tr>
+                    <tr>
+                        <td>后书名号</td>
+                        <td>》</td>
+                        <td><kbd>Shift + .</kbd></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>其中间隔符与反斜杠在键盘中的位置如下：</p>
+            <figure class="img">
+                <img src="Images/键盘.jpg" Alt="键盘" />
+                <figcaption>键盘</figcaption>
+            </figure>
+
+            <p>如果想输入全角的字符，按下<kbd>Shift + Enter</kbd>即可切换全/半角模式。简单讲，就是全角的字符与汉字占用字符相同，都是2个字节，最常见的就是全角空格“　”。</p>
+            <h5>（二）Word插入符号</h5>
+            <p>其他不常用的符号，如直角引号「」等，可在<span class="setPath">『插入选项卡』-「符号组」-【符号下拉其他符号】</span></p>
+            <figure class="img">
+                <img src="Images/插入符号.png" Alt="插入符号" />
+                <figcaption>插入符号</figcaption>
+            </figure>
+
+            <p>然后打开符号选择界面，在其中进行选择。</p>
+
+            <figure class="img">
+                <img src="Images/符号选择.png" Alt="符号选择" />
+                <figcaption>符号选择</figcaption>
+            </figure>
+
+
+            <h5>（三）输入法输入符号</h5>
+
+            <p>如果你知道这个符号的名称，可以在搜狗输入法中输入该名称，选择即可，比如直角引号『』：</p>
+            <figure class="img">
+                <img src="Images/搜狗直角引号.jpg" Alt="搜狗直角引号" />
+                <figcaption>搜狗直角引号</figcaption>
+            </figure>
+            <p class="tips">如果你觉得输入字符太多，可以搜索「输入法自动更正」获取更多有关输入法的知识，这里不再展开。</p>
+
+            <p>当然，你也可以用输入法的符号来进行输入：</p>
+            <figure class="img">
+                <img src="Images/搜狗符号.jpg" Alt="搜狗符号" />
+                <figcaption>搜狗符号</figcaption>
+            </figure>
+            <p>另外，你可以<kbd>Ctrl + Shift + K</kbd>（可自定义）调出特殊标点输入键盘：</p>
+
+            <figure class="img">
+                <img src="Images/搜狗特殊标点.jpg" Alt="搜狗特殊标点" />
+                <figcaption>搜狗特殊标点</figcaption>
+            </figure>
+
+
+            <h4>冗余格式、字符清除</h4>
+
+            <p>在写作前期，我们需要复制大量的他人文章，其中大部分内容可能来自网络。</p>
+            <p>但直接从浏览器中复制过来会有这样或那样的问题，比如文字带链接，有多余空行的等等，如果不及时处理这些问题，之后很难再理清了。</p>
+            <p>因此，我们需要了解下面这些技巧，来清除这些冗余的格式和字符：</p>
+
+            <h5>（一） 清除格式-只保留文本</h5>
+            <p>由于我们浏览器中的文章的文字会自带一定的格式，我们在Word中是不需要这些格式的，因为之后会进行统一的样式修整。因此我们可以在粘贴时选择仅保留文本，具体路径如下：<span class="setPath">『开始选项卡』-「剪贴板组」- 【粘贴下拉只保留文本】</span></p>
+            <figure class="img">
+                <img src="Images/只保留文本.png" Alt="只保留文本" />
+                <figcaption>只保留文本</figcaption>
+            </figure>
+            <p class="warning">这种方法类似于通过记事本进行粘贴</p>
+
+            <h5>（二） 删除多余空行</h5>
+            <p>有时候我们会碰到这种情况，在两行文字中有一个或多个空白行，如下面的示意图：</p>
+            <figure class="img">
+                <img src="Images/空白行.png" Alt="空白行" />
+                <figcaption>空白行</figcaption>
+            </figure>
+            <p>我们使用查找替换功能<kbd>Ctrl + H</kbd>：查找<span class="text">^P^P</span>，替换为<span class="text">^p</span></p>
+            <figure class="img">
+                <img src="Images/删除空行替换.png" Alt="删除空行替换" />
+                <figcaption>删除空行替换</figcaption>
+            </figure>
+            <p class="tips">如果有多个空白行，就多执行几次该操作。</p>
+
+            <p>对查找和替换感兴趣的，可以看这部分<a href="#FindAndReplace">Word查找与替换详解</a></p>
+
+
+            <h5>（三） 删除手动换行符</h5>
+
+            <p>有时候，我们在网页中或者OCR软件中复制的文字，可能会遇到一些这样莫名其妙的符号，是一个向下的箭头，其实这个叫做手动换行符，俗称软回车，使用快捷键<kbd>Shift + Enter</kbd>即可打出，如下图：</p>
+            <figure class="img">
+                <img src="Images/手动换行符.png" Alt="手动换行符" />
+                <figcaption>手动换行符</figcaption>
+            </figure>
+            <p class="tips">如果你的Word没有显示这些标记，可以在<span class="setPath">『开始选项卡』-「段落组」~ 【显示/隐藏标记】</span>中打开，或者直接使用快捷键<kbd>Ctrl + *</kbd>快速打开。</p>
+
+            <p>如何删除呢？查找<span class="text">^|</span>替换为<span class="text"></span>（空）。</p>
+            <figure class="img">
+                <img src="Images/替换手动换行符.png" Alt="替换手动换行符" />
+                <figcaption>替换手动换行符</figcaption>
+            </figure>
+
+            <h4>标题样式设置</h4>
+
+            <p>对于格式的修改，不算太难，但Word有自己的逻辑。</p>
+
+            <h5>（一） 什么是样式</h5>
+
+            <p>首先说一下，Word中通过大纲来分辨等级。最高级的是1级，最低级的是正文。而我们日常设置的字符格式和段落格式，其实都是样式的一部分。</p>
+
+            <h5>（二） 为什么要用样式</h5>
+
+            <p>在排版长文档中，使用样式可以避免你重复的操作。</p>
+
+            <p>比如你需要修改一下“第一章 XXXXX”这类文字的颜色，如果不用标题样式，可能需要替换或者格式刷，但有很多类似的文字，重复操作步骤太多。而且，如果你在第2章前想加入一个新章作为第2章，那之后的所有章节编号都需要修改，而使用样式可以自动修改。可以说，样式是所有排版自动化的基础。</p>
+
+            <h5>（三） 怎样设置标题样式</h5>
+
+            <p>首先论文中，会有至少三级标题和正文，还有一些特殊的格式，比如封面中的文字。这个我们在准备那部分就有谈过，这里不再赘述。</p>
+
+            <p>接下来，我们需要创建章、节、正文等样式。</p>
+
+            <p>在原有的样式中进行修改，比如标题一就表示章样式，标题二就表示节样式。</p>
+
+            <p>我们在需要修改的样式上右击，选择修改：</p>
+            <figure class="img">
+                <img src="Images/样式修改.png" Alt="样式修改" />
+                <figcaption>样式修改</figcaption>
+            </figure>
+
+            <p>这里可以更具体地设置字体、段落、快捷键等样式：</p>
+            <figure class="img">
+                <img src="Images/样式格式.png" Alt="样式格式" />
+                <figcaption>样式格式</figcaption>
+            </figure>
+            <p>具体如下图，注意图中框选的地方，是论文常常要求更改的。</p>
+
+            <p>字体设置比较简单，就不进行展示了，看下段落设置：</p>
+            <figure class="img">
+                <img src="Images/段落设置.png" Alt="段落设置" />
+                <figcaption>段落设置</figcaption>
+            </figure>
+
+            <p>一般取消“对齐网格”，如勾选文字会对齐一条看不到的线，行距不容易调整，1.2和1.3是没有差距的。</p>
+
+            <p>设置好了格式，那前面的「第X章」和「1.2」这样的前缀如何设置呢？这些前缀其实是<b>多级列表</b>的一部分，我们怎样设置呢？</p>
+
+            <p>首先，我们创建新的多级列表：</p>
+
+            <p>在<span class="setPath">『开始选项卡』-「段落组」- 【多级列表】</span>中设置</p>
+
+            <figure class="img">
+                <img src="Images/定义新的多级列表.png" Alt="定义新的多级列表" />
+                <figcaption>定义新的多级列表</figcaption>
+            </figure>
+
+            <p>在定义新多级列表时，需要注意以下问题：
+                <ul>
+                    <li>首先在左侧打开“更多”选项，以调整具体样式；</li>
+                    <li>调整各级列表的链接样式，这样我们之后只要设定标题样式，就会自动带有1.1这样的编号样式了；</li>
+                    <li>将编号之后选择为空格，否则使用默认的制表位会出现间隔过大的问题；</li>
+                    <li>若一级标题样式为“第一章 XXXXXXX”，二级标题默认的编号为“一.1”，如果想改为“1.1”，需勾选“正规形式编号”。</li>
+                </ul>
+            </p>
+
+            <p>具体如图标注所示：</p>
+
+            <figure class="img">
+                <img src="Images/定义多级列表.png" Alt="定义多级列表" />
+                <figcaption>定义多级列表</figcaption>
+            </figure>
+
+            <p>这样，我们的标题部分就设置好了。</p>
+
+            <p>如果之后你又遇到了新的样式，可以先将其中的某一段更改为想要的样式，然后在对应的样式中右键，选择“更新以匹配”。</p>
+            <figure class="img">
+                <img src="Images/更新以匹配标题样式.png" Alt="更新以匹配标题样式" />
+                <figcaption>更新以匹配标题样式</figcaption>
+            </figure>
+
+
+            <h3>图片相关</h3>
+            <progress></progress>
+
+            <h4>插入图片</h4>
+
+            <p>插入图片主要有两种方法：</p>
+
+            <ul>
+                <li>1. 在<span class="setPath">『插入选项卡』-「插图组」-【图片】</span>中选择本地文件。</li>
+                <li>2. 直接<kbd>Ctrl + V</kbd>进行图片粘贴。</li>
+            </ul>
+
+            <p>如果需要作图。比如流程图等，可以在PPT中制作，然后使用截图的方式（不要使用默认的另存为图片功能，像素不可控），粘贴到Word中。而且还可以自由更改。</p>
+
+            <p>如果在其他程序中粘贴的图片带有超链接，你可以使用清除所有格式功能。具体路径如下：<span class="setPath">『开始选项卡』-「字体组」~ 【清除所有格式】</span></p>
+
+            <figure class="img">
+                <img src="Images/清除所有格式.png" Alt="清除所有格式" />
+                <figcaption>清除所有格式</figcaption>
+            </figure>
+
+
+            <h4>更好地选择图片</h4>
+
+            <p>有时候一页中的图片太多，为了方便更快速的选择特定的图片，可以打开选择窗格。路径为<span class="setPath">『开始选项卡』-「编辑组」-【选择下拉选择窗口】</span></p>
+            <figure class="img">
+                <img src="Images/选择窗口.png" Alt="选择窗口" />
+                <figcaption>选择窗口</figcaption>
+            </figure>
+
+            <p class="tips">使用快捷键<kbd>Alt + F10</kbd>也可调出选择窗格</p>
+
+            <h4>设置图片样式</h4>
+
+            <p>样式不仅仅用在文字上，对于其他非文字内容的，比如图片、表格等，也可以使用样式统一管理。而图片段落可以做如下设置：</p>
+
+            <figure class="img">
+                <img src="Images/图片样式.png" Alt="图片样式" />
+                <figcaption>图片样式</figcaption>
+            </figure>
+
+            <p>这里注意，行距一定要设置多倍行距，无论是1倍还是1.5倍都可以，一定不要设置为固定值，否则会出现类似下图这种，图片显示不全的问题：</p>
+
+            <figure class="img">
+                <img src="Images/图片显示不全.png" Alt="图片显示不全" />
+                <figcaption>图片显示不全</figcaption>
+            </figure>
+
+            <h4 id="tizhu">图片题注插入与引用</h4>
+
+            <h5>（一） 什么是题注？</h5>
+
+            <p>题注，其实就是对图片等元素的命名。比如说下面的这个：图1-1 莫浅北头像。而我们在论文中的命名方式，通常是在将图片放在各个章节中排序，而不管具体在哪一节。也就是说，前面的1表示这张图是哪一章中的，后面的1表示这是它所在章的第几张图片。</p>
+
+            <figure class="img">
+                <img src="Images/题注示例.png" Alt="题注示例" />
+                <figcaption>题注示例</figcaption>
+            </figure>
+
+            <h5>（二） 为什么要插入题注？</h5>
+
+            <p>使用题注可以更方便我们阅读，让阅读论文的人更好地找到相关的图片，而且可以自动更新。</p>
+
+            <h5>（三） 如何使用题注？</h5>
+
+            <ol>
+                <li>1. 插入题注</li>
+
+                <p><span class="setPath">『引用选项卡』-「题注」-【插入题注】</span></p>
+                <figure class="img">
+                    <img src="Images/插入题注.png" Alt="插入题注" />
+                    <figcaption>插入题注</figcaption>
+                </figure>
+
+                <li>2. 新建标签（图）</li>
+                <figure class="img">
+                    <img src="Images/题注新建标签.png" Alt="题注新建标签" />
+                    <figcaption>题注新建标签</figcaption>
+                </figure>
+
+                <li>3. 设置题注编号，勾选“章节号”后，就会按照每一章统一编号，如第1章的图片为：图1-1，图1-2……图1-21</li>
+                <figure class="img">
+                    <img src="Images/题注编号.png" Alt="题注编号" />
+                    <figcaption>题注编号</figcaption>
+                </figure>
+
+                <p>但有一个问题，如果我们的一级标题样式为“第一章”这样的中文汉字，图片编号会默认为“图一.1”，但这并不是我们想要的，我们想要“图1.1”，如何设置呢？</p>
+
+                <p>两种方法，一种就是使用替换，但需要替换多次，而且如果一旦中间有插入其他章节，不能自动更新，不满足自动化的要求，这里就不多说了</p>
+
+                <p>我们说说另外一种方法，更改域代码。</p>
+
+                <p>这里涉及到一个新概念：域代码。简单讲，就是Word背后的逻辑公式，举个例子：在第一章后插入新的一章，Word会自动显示为“第二章”，这背后就是域代码的功劳。</p>
+
+                <p>首先，按照上面正常的操作步骤插入题注，然后按<kbd>Alt + F9</kbd>切换为域代码模式，在“图”（你自定义的题注标签名称）后面按<kbd>Ctrl + F9</kbd>插入一个代表域代码的大括号，之后输入<span class="text">QUOTE"一九九六年三月日"\@"D"</span>，将紧挨着的大括号及其内容号，剪贴到“月日”之间，然后再按<kbd>Alt + F9</kbd>切换为普通模式，这样就可以了。</p>
+
+                <figure class="img">
+                    <img src="Images/修改域对比.png" Alt="修改域对比" />
+                    <figcaption>修改域对比</figcaption>
+                </figure>
+
+                <p>但如果我们每次都这样修改，也很麻烦，我们可以采用自动图文集的方式，这部分对于图表式都是通用的，我会放在公式那节统一说明。</p>
+
+                <p>除了我们在图片下方设置题注外，我们在文章中也会引用这些题注，“如图1-1所示”，这里的“图1-1”就是题注的引用，会自动更新</p>
+
+                <p>如何对题注进行引用呢？</p>
+
+                <li>4. 在<span class="setPath">『引用选项卡』-「题注」- 【交叉引用】</span></li>
+                <figure class="img">
+                    <img src="Images/题注交叉引用.png" Alt="题注交叉引用" />
+                    <figcaption>题注交叉引用</figcaption>
+                </figure>
+
+                <li>5. 一般我们会做“如图1-1所示”的引用，因此我们在“引用内容”栏需选择“仅标签和编号”</li>
+                <figure class="img">
+                    <img src="Images/设置交叉引用.png" Alt="设置交叉引用" />
+                    <figcaption>设置交叉引用</figcaption>
+                </figure>
+
+            </ol>
+
+
+            <h3>表格相关</h3>
+            <progress></progress>
+
+
+            <h4>插入表格</h4>
+            <p><span class="setPath">『插入选项卡』-「表格」-【插入表格|Excel电子表格】</span></p>
+            <figure class="img">
+                <img src="Images/插入表格.png" Alt="插入表格" />
+                <figcaption>插入表格</figcaption>
+            </figure>
+
+            <h4>粘贴后保持原格式</h4>
+            <p>复制excel的表格，粘贴时选择链接与保留原格式</p>
+            <figure class="img">
+                <img src="Images/表格保留原格式.jpg" Alt="表格保留原格式" />
+                <figcaption>表格保留原格式</figcaption>
+            </figure>
+
+            <h4>跨页重复标题行</h4>
+            <p>有时候我们的表格很长，需要跨页显示，而第2+页需要显示表头：</p>
+
+            <figure class="img">
+                <img src="Images/跨页重复表头.png" Alt="跨页重复表头" />
+                <figcaption>跨页重复表头</figcaption>
+            </figure>
+
+            <p>设置方法：</p>
+            <p>选中想要设置为标题行的<b>行（一行或多行）</b>，单击<span class="setPath">『表格工具布局选项卡』-「数据」-【重复标题行】</span></p>
+
+            <figure class="img">
+                <img src="Images/重复标题行.png" Alt="重复标题行" />
+                <figcaption>重复标题行</figcaption>
+            </figure>
+
+            <h4>设置三线表</h4>
+
+            <p>其实设置三段式表格，就是使用不同粗细的框线绘制的。比如下面这个表格：</p>
+
+            <figure class="img">
+                <img src="Images/三线表.png" Alt="三线表" />
+                <figcaption>三线表</figcaption>
+            </figure>
+
+            <p>使用<span class="setPath">『表格工具设计选项卡』-「边框」-【笔颜色+边框样式+边框粗细】</span>实现：</p>
+
+            <figure class="img">
+                <img src="Images/边框刷.png" Alt="边框刷" />
+                <figcaption>边框刷</figcaption>
+            </figure>
+
+            <p>上下两条边线稍粗（1.5磅）一些，中间的分隔线稍细（0.75磅），如果中间需要分隔开，仅仅是添加了竖向白色线框，使用了障眼法。</p>
+
+
+            <p>另外，可以将这个表格保存为模板，重复使用</p>
+
+            <figure class="img">
+                <img src="Images/保存表格模板.png" Alt="保存表格模板" />
+                <figcaption>保存表格模板</figcaption>
+            </figure>
+
+
+            <h4>其他常用操作</h4>
+            <ul>
+                <li>光标定位于表格最后一个单元格，按<kbd>Tab</kbd>键新建一行</li>
+                <li>光标定位于表格某一行最后的换行符后，按<kbd>Enter</kbd>键在下面插入一行</li>
+                <li>光标定位于某一单元格，按<kbd>Ctrl + Shift + Enter</kbd>键拆分表格：在光标行前插入一个空段落，同时该行作为新表格中的首行</li>
+            </ul>
+
+
+            <h4>表格的题注插入与引用</h4>
+
+            <p>与图片的类似，这里不再赘述，详见<a href="#tizhu">图片题注插入与引用</a></p>
+
+
+            <h3>公式相关</h3>
+            <progress></progress>
+
+            <h4>插入公式</h4>
+
+            <p><span class="setPath">『插入选项卡』-「符号组」-【公式】</span>，或者快捷键<kbd>Alt + =</kbd>，</p>
+
+            <h4>录入公式</h4>
+
+            <h5>(一) 使用墨迹公式</h5>
+            <p>在<span class="setPath">『公式工具选项卡』-「工具」-【墨迹公式】</span>，手动书写，自动识别（识别率不是很好）</p>
+            <figure class="img">
+                <img src="Images/墨迹公式.jpg" Alt="墨迹公式" />
+                <figcaption>墨迹公式</figcaption>
+            </figure>
+
+            <h5>(二) 手动输入公式</h5>
+
+            <p>如果你需要插入很多数学公式，你可以学习一下如何<a href="#GongShi">快速录入公式</a>，里面涉及到一些比较难的代码，这里就不展开讲了。</p>
+
+            <h5>(三) 鼠标点击录入公式</h5>
+
+            <p>在<span class="setPath">『公式工具-设计选项卡』-「符号组和结构组」</span>插入对应的符号和结构，不过需要在鼠标和键盘中来回切换，适用于对公式需求不多的论文。</p>
+
+            <figure class="img">
+                <img src="Images/插入公式和符号.jpg" Alt="插入公式和符号" />
+                <figcaption>插入公式和符号</figcaption>
+            </figure>
+
+
+
+            <h4>公式题注插入与引用</h4>
+            <h5>（一）普通公式题注插入</h5>
+
+            <p>需求：公式位于行中心，公式题注与公式同行，居右对齐，为“（2-1）”样式，包括圆括号，且需要引用处只引用“公式（3-1）”字样，即如下图：</p>
+            <figure class="img">
+                <img src="Images/公式题注示例.png" Alt="公式题注示例" />
+                <figcaption>公式题注示例</figcaption>
+            </figure>
+
+            <ol>
+                <li>在<span class="setPath">『视图选项卡』-「显示」- 【标尺】</span>勾选上以打开标尺工具；</li>
+                <li>单击左侧制表位对齐方式按钮，然后在标尺上合适位置单击插入制表位：第一次为居中对齐，第二次为右对齐；</li>
+                <li>在公式的左右两侧，均单击一次<kbd>Tab</kbd>键，让公式居中对齐；</li>
+                <li><kbd>Enter</kbd>换行后插入题注，具体参考上面的图表题注插入，之后在题注两侧添加圆括号</li>
+                <li>返回公式所在行的最后位置，按 <kbd>Ctrl + Alt + Enter</kbd>（样式分隔符），完成题注换到同行操作</li>
+
+                <li>引用方法类似图表交叉引用，但这里引用内容需要选择“整项题注”</li>
+            </ol>
+
+            <p class="tips">如果想更精确的定位公式和编号的位置，可以使用样式中的“制表位”</p>
+
+            <h5>（二）图表式快速多次插入</h5>
+            <p>上面提到，如果想一劳永逸，让Word可以自动更新，需要我们设置题注，但可能需要我们更改域代码，如果每次都要操作一次非常麻烦。</p>
+            <p>通过使用自动图文集工具，可以减少我们的多次域代码操作。我们以操作步骤较多的公式题注为例，说一下这种方法：</p>
+
+            <ol>
+
+                <li>首先将自动图文集功能添加到快速访问工具栏，详见<a href="#TuWenJi">快速访问栏添加不在功能区的命令</a></li>
+                <li>在已设置好公式格式的位置，按<kbd>Alt + F3</kbd>将所选保存为新的图文库</li>
+                <figure class="img">
+                    <img src="Images/公式图文集.png" Alt="公式图文集" />
+                    <figcaption>公式图文集</figcaption>
+                </figure>
+                <li>在需要插入公式的位置，单击快速工具栏中的自动图文集工具，单击应用刚才的样式</li>
+                <figure class="img">
+                    <img src="Images/插入图文集.png" Alt="插入图文集" />
+                    <figcaption>插入图文集</figcaption>
+                </figure>
+
+                <li>对公式部分进行修改就可以了。</li>
+                <p class="verb">建议之前的公式设置得越简单越好，如“a”，这样删除起来比较方便。</p>
+
+            </ol>
+
+            <!-- ++++++++ h3 END  +++++++ -->
+
+            <h3>善用分节</h3>
+            <progress></progress>
+
+
+            <p>分节可以很好的将文章分为几部分，各部分不会相互影响，便于之后的设置页眉页脚。通常用于各部分相接位置，如封面、摘要、目录、正文、附录之间，正文中的各章节</p>
+
+            <p><span class="setPath">『布局选项卡』-「页面设置组」-【分隔符下拉分节符下一页】</span></p>
+            <figure class="img">
+                <img src="Images/分节下一页.jpg" Alt="分节下一页" />
+                <figcaption>分节下一页</figcaption>
+            </figure>
+            <p>将目录、参考文献页空出，且参考文献页位于文件最后。（目录后期会自动生成）</p>
+            <!-- ++++++++ h3 END  +++++++ -->
+
+            <h3>注释标记</h3>
+            <progress></progress>
+
+            <p>bgfiuadflhsd</p>
+            <p>bgfiuadflhsd</p>
+            <p>bgfiuadflhsd</p>
+            <p>bgfiuadflhsd</p>
+            <p>bgfiuadflhsd</p>
+            <p>bgfiuadflhsd</p>
+            <p>bgfiuadflhsd</p>
+
+            <h3>参考文献引用</h3>
+            <progress></progress>
+
+
+            <p>参考文献的引用主要有两种方式，一种是全部使用编号的交叉引用，另外一种是使用尾注+交叉引用的方式。</p>
+
+
+            <h4>使用编号引用参考文献</h4>
+
+            <p>先说一下全部使用编号交叉引用的方法，这种方法比较简单实用：</p>
+
+            <ol>
+                <li>1. 新建一个名为“参考文献”的标题样式，然后录入所有的参考文献。</li>
+                <li>2. 设置其编号方式为[123]格式。</li>
+                <li>3. 在需要引用参考文献的位置，选择交叉引用-编号，引用内容选择段落编号</li>
+                <figure class="img">
+                    <img src="Images/脚注扩展三角.png" Alt="脚注扩展三角" />
+                    <figcaption>脚注扩展三角</figcaption>
+                </figure>
+                <li>4. 依次插入对应参考文献的交叉引用。</li>
+                <li>5. 通过<kbd>Ctrl + H</kbd>查找<span class="text">[^#]</span>，替换为<span class="text">^&amp;</span>上标格式</li>
+                <figure class="img">
+                    <img src="Images/替换为上标.png" Alt="替换为上标" />
+                    <figcaption>替换为上标</figcaption>
+                </figure>
+                <p class="tips">上标属于字体格式</p>
+                <p class="warning">这种替换方法，可能会将正文中的[1]这样的文字错误替换。请提前做好两者的区分，比如你可以在插入引用时使用<b>下划线</b>作为特殊标志。</p>
+            </ol>
+
+
+            <h4>使用尾注引用参考文献</h4>
+            <p>但有的学校，可能规定使用尾注引用的方式，这里再说一下这种比较复杂的方式：</p>
+
+            <ol>
+                <li>1）在需要插入参考文献的地方插入尾注</li>
+                <p>首次：<span class="setPath">『引用选项卡』-「脚注」-【扩展三角】</span></p>
+                <figure class="img">
+                    <img src="Images/脚注扩展三角.png" Alt="脚注扩展三角" />
+                    <figcaption>脚注扩展三角</figcaption>
+                </figure>
+                <p>打开设置尾注的位置和样式：</p>
+                <figure class="img">
+                    <img src="Images/脚注和尾注.png" Alt="脚注和尾注" class="half" />
+                    <figcaption>脚注和尾注</figcaption>
+                </figure>
+                <p class="warning">如果参考文献后还有新的节，这里必须选择节的结尾</p>
+                <p>再次：<span class="setPath">『引用选项卡』-「脚注」-【插入尾注】</span>即可</p>
+
+                <li>2）输入所参考的文献资料名称</li>
+
+                <li>重复步骤（1）（2），直到所有要参考的文献（不包含重复引用）全部插入</li>
+
+                <li>3）将尾注置于参考文献节</li>
+
+                <p>将鼠标定位于前面不是参考文献的节中的某一段，在<span class="setPath">『布局选项卡』-「页面设置」-【扩展三角】</span>在打开的对话框中切换到版式，勾选“取消尾注”，应用于本节。这样尾注内容会移动到下一节中。</p>
+                <figure class="img">
+                    <img src="Images/版式设置.png" Alt="版式设置" />
+                    <figcaption>版式设置</figcaption>
+                </figure>
+                <p><kbd>F4</kbd>键重复该操作，直到所有的尾注均移动到参考文献节中。</p>
+
+
+                <li>4）格式替换</li>
+
+                <p>查找与替换，按照图片所示，输入查找与替换内容，全部替换</p>
+                <figure class="img">
+                    <img src="Images/查找和替换.png" Alt="查找和替换" />
+                    <figcaption>查找和替换</figcaption>
+                </figure>
+                <p class="tips">^e表示尾注标识编号，^&amp;表示查找栏中的文字，[ ]是设置格式，这些也可以在特殊格式中选择</p>
+
+
+
+                <li>5）去除尾注分隔符横线</li>
+                <ol>
+                    <li>视图选项卡—→视图—→草稿</li>
+                    <figure class="img">
+                        <img src="Images/视图草稿.png" Alt="视图草稿" />
+                        <figcaption>视图草稿</figcaption>
+                    </figure>
+                    <li>引用选项卡——&gt;脚注——&gt;显示备注，选择查看尾注区，确定</li>
+                    <figure class="img">
+                        <img src="Images/显示尾注.png" Alt="显示尾注" />
+                        <figcaption>显示尾注</figcaption>
+                    </figure>
+                    <li>依次选择尾注分隔符、尾注延续分隔符，然后删除</li>
+                    <figure class="img">
+                        <img src="Images/删除尾注.png" Alt="删除尾注" />
+                        <figcaption>删除尾注</figcaption>
+                    </figure>
+                    <li>返回页面视图可以点击状态栏右侧的页面视图标志，切换回普通视图：</li>
+                    <figure class="img">
+                        <img src="Images/页面视图标志.png" Alt="页面视图标志" />
+                        <figcaption>页面视图标志</figcaption>
+                    </figure>
+                </ol>
+
+
+                <li>6）取消参考文献节字体上标</li>
+
+
+                <p>这样插入的字体，引用部分和参考文献部分全都为上标格式，我们需要将参考文献部分改为非上标。</p>
+
+                <p>选择所有参考文献，单击<span class="setPath">『开始选项卡』-「字体」-【上标】</span>，这样就更改为普通的非上下标格式了。</p>
+
+
+                <li>7）重复引用参考文献</li>
+                <p>同插入图表题注的方法，插入交叉引用，引用内容为“尾注编号”。</p>
+                <figure class="img">
+                    <img src="Images/尾注交叉引用.png" Alt="尾注交叉引用" />
+                    <figcaption>尾注交叉引用</figcaption>
+                </figure>
+
+                <p class="tips">如有修改，全选文章后右键更新域（或F9快捷键）；<br />双击参考文献部分的尾注，可返回首个插入的位置。
+                </p>
+            </ol>
+
+
+            <h3>目录生成</h3>
+            <progress></progress>
+
+            <h4>插入中文目录</h4>
+            <ol>
+                <li><span class="setPath">『引用选项卡』-「目录」-【目录下拉-自定义目录】</span></li>
+                <figure class="img">
+                    <img src="Images/自定义目录.png" Alt="自定义目录" />
+                    <figcaption>自定义目录</figcaption>
+                </figure>
+                <li>注意以下前导符的设置</li>
+                <figure class="img">
+                    <img src="Images/目录设置.png" Alt="目录设置" />
+                    <figcaption>目录设置</figcaption>
+                </figure>
+                <li>点击选项，可修改目录的来源，比如仅显示前三级目录，仅显示某些样式的内容：
+                </li>
+
+                <figure class="img">
+                    <img src="Images/目录来源修改.png" Alt="目录来源修改" />
+                    <figcaption>目录来源修改</figcaption>
+                </figure>
+
+                <li>点击修改按钮，修改各级别标题在目录页中的显示样式</li>
+                <figure class="img">
+                    <img src="Images/标题样式修改.png" Alt="标题样式修改" />
+                    <figcaption>标题样式修改</figcaption>
+                </figure>
+            </ol>
+
+            <h4>插入英文目录</h4>
+            <p>有些学校要求，除中文目录外，还需要插入英文目录。</p>
+            <p>但我们没有英文标题文字，这里介绍两种手法实现：</p>
+
+
+            <h5>复制中文目录，然后将其翻译为英文</h5>
+
+            <img src="" alt="" />
+
+            <h5>使用标准的域</h5>
+
+
+            <p>在选项卡中选择，插入域</p>
+
+
+
+            <h5>使用障眼法</h5>
+
+            <p>上面的插入域方法，无法设置自动编号，比如Chapter1这种，如果必须，可以在所对应的标题下插入对应的英文标题和多级编号，与中文标题插入方法类似。</p>
+
+            <p>设置所有级别的英文标题的段落行距为固定值0.7磅，字体颜色为白色。</p>
+
+            <p>然后使用插入中文目录的步骤，在目录来源中取消勾选大纲和中文标题样式，设置对应的英文标题样式即可</p>
+
+            <p>如果出现是否替换对话框，选择否即可</p>
+
+            <figure class="img">
+                <img src="Images/不替换目录.png" Alt="不替换目录" />
+                <figcaption>不替换目录</figcaption>
+            </figure>
+
+            <h4>插入图片、表格、公式等目录</h4>
+
+
+            <p>同中文目录插入方法，选择对应的题注样式即可。</p>
+
+            <h3>页眉和页脚</h3>
+            <progress></progress>
+
+
+            <h4>插入纯文本</h4>
+
+            <p>插入页眉，可双击页面上方（双击页面内区域退出）或<span class="setPath">『插入选项卡』-「页眉和页脚」-【页眉】</span>，一般调整图中框选的位置</p>
+            <figure class="img">
+                <img src="Images/页眉页脚设置.png" Alt="页眉页脚设置" />
+                <figcaption>页眉页脚设置</figcaption>
+            </figure>
+            <p class="warning">如果当前页眉不同于上页页眉时，需要取消【链接到前一条页眉】，而且需要在上一页与本页中插入分节符</p>
+
+            <h4>插入章节标题</h4>
+            <p>有时候在页眉部分，需要插入每章的标题，如第1章 概述</p>
+            <ol>
+                <li>1. 在<span class="setPath">『页眉和页脚设计选项卡』-「插入」-【文档部件-域】</span></li>
+                <figure class="img">
+                    <img src="Images/文档部件域.png" Alt="文档部件域" />
+                    <figcaption>文档部件域</figcaption>
+                </figure>
+                <li>2. 选择域名StyleRef，然后选择样式名</li>
+                <figure class="img">
+                    <img src="Images/域设置.png" Alt="域设置" />
+                    <figcaption>域设置</figcaption>
+                </figure>
+                <p class="tips">如果你还想要标题前的“第X章”，需要勾选插入段落编号</p>
+
+                <b>页眉设置奇偶页不同</b>
+            </ol>
+
+            <h4>页脚插入页码</h4>
+            <p>在页脚位置通常会要求插入页码</p>
+            <li>在<span class="setPath">『页眉和页脚设计选项卡』-「页眉和页脚」-【页码-设置页码格式】</span>插入页码</li>
+            <figure class="img">
+                <img src="Images/页码格式.png" Alt="页码格式" />
+                <figcaption>页码格式</figcaption>
+            </figure>
+            <p>如果想让页码从1开始，注意设置下方的起始页码，从1（或任意数字）开始</p>
+
+            <p>如果要求没有页眉横线时，只要选择文本（包括回车符），然后在『开始选项卡』-「段落」-【边框=无边框】</p>
+
+            </ul>
+
+
+            <h3>最后的完善</h3>
+            <progress></progress>
+
+            <p><kbd>Ctrl + A</kbd>全选后，按下<kbd>F9对之前设置的域进行更新。</kbd></p>
+
+            <p class="tips">为满足页面整洁美观，可适当增减文字，且这部应应用于“修”的全部过程</p>
+
+
+
+            <h2>审存</h2>
+            <progress></progress>
+
+            <h3>图、表错位</h3>
+            <h3>样式未应用</h3>
+            <h3>页眉、页脚格式</h3>
+            <h3>链接失效</h3>
+
+            <ul>
+                <li>多版本</li>
+                <p>上交浏览的电脑可能不是编辑文档时所用的office版本，建议另存为一个兼容版本（.doc）</p>
+                <li>PDF版</li>
+                <p>打印时使用，避免因软件或软件版本不同造成的排版错乱</p>
+                <li>压缩文件</li>
+                <p>上交Word及其他相关文件电子版</p>
+            </ul>
+
+
+
+
+            <h2>其他技巧</h2>
+
+            <progress></progress>
+
+
+            <h3>常用快捷键</h3>
+            <progress></progress>
+
+
+            <p>掌握一些Word和系统常用的快捷键，对内容的快速排版有很重要的作用，这里按照我使用的频率进行列举。由于我们需要应用规定的格式，因此一些设置格式的快捷键，仅在写作部分起主要作用，因此我将这些快捷键放在格式设置快捷键里了。</p>
+
+
+            <details>
+                <summary>Word中最常用快捷键</summary>
+
+                <table>
+                    <caption>最常用快捷键</caption>
+                    <thead>
+                        <tr>
+                            <th>快捷键</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="10">注：按照使用频率从高到进行排序</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Ctrl +S</td>
+                            <td>保存</td>
+                        </tr>
+                        <tr>
+                            <td>F4</td>
+                            <td>重复上一次的操作</td>
+                        </tr>
+                        <tr>
+                            <td>Alt +Tab</td>
+                            <td>切换应用程序</td>
+                        </tr>
+                        <tr>
+                            <td>Shlft+Space</td>
+                            <td>半角/全角切换（输入法）</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + C</td>
+                            <td>复制</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + X</td>
+                            <td>剪切</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + V</td>
+                            <td>粘贴</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Z</td>
+                            <td>撤销</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Y</td>
+                            <td>反撤销</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + A</td>
+                            <td>全选</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Enter </td>
+                            <td>插入分页符</td>
+                        </tr>
+                        <tr>
+                            <td>Alt + =</td>
+                            <td>插入公式</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shlft + C</td>
+                            <td>复制文本格式</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl +Shlft + V</td>
+                            <td>粘贴文本格式</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">注：以上两种相当于使用格式刷</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + D</td>
+                            <td>设置字体</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + P</td>
+                            <td>打印预览</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + F</td>
+                            <td>查找</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + H</td>
+                            <td>替换</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + N</td>
+                            <td>新建文档</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + O</td>
+                            <td>打开新文档</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+
+
+            <details>
+
+                <summary>Word中较常用快捷键</summary>
+
+
+                <table>
+                    <caption>较常用快捷键</caption>
+                    <thead>
+                        <tr>
+                            <th>快捷键</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alt + F3</td>
+                            <td>构建基块（保存为自动图文集）</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + F9</td>
+                            <td>插入域代码的大括号</td>
+                        </tr>
+                        <tr>
+                            <td>Alt + F9</td>
+                            <td>切换域代码和普通模式</td>
+                        </tr>
+                        <tr>
+                            <td>F12</td>
+                            <td>另存为</td>
+                        </tr>
+                        <tr>
+                            <td>Home/End</td>
+                            <td>跳到一行开头/末尾</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl +框选</td>
+                            <td>不连续选择</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + 单击</td>
+                            <td>选择光标所在位置到光标移动到的位置（该过程按住 Shift 键）</td>
+                        </tr>
+                        <tr>
+                            <td>Alt + 框选</td>
+                            <td>选择矩形区域（列选择）</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + ←/→</td>
+                            <td>向左/右选择文字</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + ↑/↓</td>
+                            <td>选择文本到上/下一行</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + Home/End</td>
+                            <td>选择光标到行首/尾文字</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + Home/End</td>
+                            <td>选中光标到文档开头/末尾的所有文字</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + ↑/↓</td>
+                            <td>选中光标所在的向上/下的一个段落（可连续选择）</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + F3 </td>
+                            <td>切换选中的字母大小写</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Alt + V</td>
+                            <td>选择性粘贴</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </details>
+
+
+            <details>
+
+                <summary>Word中较少用到的快捷键</summary>
+
+                <table>
+                    <caption>较少使用的快捷键</caption>
+                    <thead>
+                        <tr>
+                            <th>快捷键</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ctrl + F10</td>
+                            <td>最大化窗口</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Q</td>
+                            <td>删除段落格式</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + 8</td>
+                            <td>显示/隐藏编辑标记</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + PageDown</td>
+                            <td>下一屏</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + PageUP</td>
+                            <td>上一屏</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + K</td>
+                            <td>插入超链接</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + F9</td>
+                            <td>清除超链接</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + Alt + D</td>
+                            <td>插入当前系统日期</td>
+                        </tr>
+                        <tr>
+                            <td>Shift + Alt + T</td>
+                            <td>插入当前系统时间</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Alt + T</td>
+                            <td>™</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Alt + R</td>
+                            <td>®</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Alt + C</td>
+                            <td>©</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + 0</td>
+                            <td>在段前添加一行间距</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + 6</td>
+                            <td>清除超链接</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + ←</td>
+                            <td>单词开始</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + →</td>
+                            <td>单词结尾</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl +W</td>
+                            <td>关闭窗口</td>
+                        </tr>
+
+                        <tr>
+                            <td> Shift + F5</td>
+                            <td>定位到上次编辑的位置（总共可使用三次）</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + F12</td>
+                            <td>打开文档（资源管理器界面）</td>
+                        </tr>
+                        <tr>
+                            <td> Shift + Enter </td>
+                            <td>手动换行符</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + G</td>
+                            <td>定位</td>
+                        </tr>
+                        <tr>
+                            <td>F5</td>
+                            <td>定位</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+
+
+
+            <details>
+                <summary>Word中格式设置快捷键</summary>
+
+                <table>
+                    <caption>格式设置快捷键</caption>
+                    <thead>
+                        <tr>
+                            <th>快捷键</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="10">注：按照使用频率从高到进行排序</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Ctrl + [</td>
+                            <td>逐磅缩小字号</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + ]</td>
+                            <td>逐磅放大字号</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + .</td>
+                            <td>增大字号</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shlft + ,</td>
+                            <td>减小字号</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + B</td>
+                            <td>字符变为粗体</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shlft + B</td>
+                            <td>放大加粗字体</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + I</td>
+                            <td>字符变为斜体</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + U</td>
+                            <td>为字符添加下划线</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl +Shlft + D</td>
+                            <td>增加双下划线</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + W</td>
+                            <td>只给字、词加下划线、不给空格加下划线</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + E</td>
+                            <td>段落居中</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + L</td>
+                            <td>左对齐</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + R</td>
+                            <td>右对齐</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + J</td>
+                            <td>两端对齐</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + Shift + J</td>
+                            <td>分散对齐</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + T</td>
+                            <td>悬挂缩进</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + M</td>
+                            <td>段落缩进</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + 1</td>
+                            <td>单倍行距</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + 2</td>
+                            <td>双倍行距</td>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + 5</td>
+                            <td>1.5倍行距</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </details>
+
+            <details>
+
+                <summary>一次性快捷键</summary>
+
+                <table>
+                    <caption>一次性快捷键</caption>
+                    <thead>
+                        <tr>
+                            <th>快捷键</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="10">注：这部分的快捷键，一般只需要使用一次，之后使用F4，重复操作即可</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td> Ctrl + Alt + 1 </td>
+                            <td>应用“标题1”样式</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + Alt + 2 </td>
+                            <td>应用“标题2”样式</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + Alt + 3 </td>
+                            <td>应用“标题3”样式</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + Shift + N </td>
+                            <td>应用“正文”格式</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + = </td>
+                            <td>设置/取消下标</td>
+                        </tr>
+                        <tr>
+                            <td> Ctrl + Shift + = </td>
+                            <td>设置/取消上标</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </details>
+
+
+            <h3>格式刷</h3>
+            <progress></progress>
+
+            <p>单击使用一次，双击使用多次，按Esc键退出格式刷</p>
+
+
+            <h3 id="FindAndReplace">查找与替换</h3>
+            <progress></progress>
+
+            <p>查找与替换，是Word中非常好用的一个功能，比如说统一设置第一级标题的样式，批量将加粗的关键词替换为下划线，制作填空题，如果你想详细了解，可以点开下面这个：</p>
+
+            <details>
+                <summary>Word中的查找与替换详解</summary>
+
+                <div class="content">
+
+                    <h4>简单指定替换</h4>
+                    <p><kbd>Ctrl+H</kbd>，调出查找与替换窗口，在这里我们可以输入想要查找和替换的文字。</p>
+
+                    <figure class="img">
+                        <img src="Images/查找与替换简版.jpg" alt="查找与替换简版" />
+                        <figcaption>查找与替换简版</figcaption>
+                    </figure>
+                    <p>比如“台湾”替换为“中国台湾”</p>
+
+                    <h4>格式替换</h4>
+                    <p>我们单击上面图片中的【更多】按钮，会展示出更多的选项，如下图：</p>
+
+                    <figure class="img">
+                        <img src="Images/查找与替换更多.jpg" alt="查找与替换更多" />
+                        <figcaption>查找与替换更多</figcaption>
+                    </figure>
+
+                    <p>首先，我们可以指定查找替换的范围（红框线内）；是全文还是向上/下进行</p>
+                    <p>其次，我们可以勾选或取消勾选其中的选项，区分全半角、区分大小写、忽略空格、忽略标点符号等都比较容易理解，而其他的选项（使用通配符这部分我们在下面详细讲解）在中文应用中接触的比较少，就不一一讲解了</p>
+                    <p>接下来我们说说“格式”替换，单击【格式】按钮，会出现如头图的各种选项，如“字体”、“段落”、“制表位”等，这些就是用来限定或设定文本的各种格式，比如颜色，行距等等；</p>
+                    <p>而“突出显示”就是在『开始选项卡』- 「字体组」~【文本突出显示颜色】中所设置的，如下图：</p>
+
+                    <figure class="img">
+                        <img src="Images/突出显示.jpg" alt="突出显示" />
+                        <figcaption>突出显示</figcaption>
+                    </figure>
+                    <p>这里再次选择它会限定“非突出显示”，而第三次会取消这一限定</p>
+                    <p class="verb">如果你想直接取消限定，也可以单击窗口中的【不限定格式】按钮</p>
+                    <p>如下面的动态图所示，同样为文本“突出显示”，上面有该格式的被替换，而没有该格式的不被替换</p>
+
+                    <figure class="img">
+                        <img src="Images/突出显示测试.gif" alt="突出显示测试" />
+                        <figcaption>突出显示测试</figcaption>
+                    </figure>
+
+
+                    <h4>特殊格式替换</h4>
+                    <p>在查找替换更多窗口中可以看到还有一个【特殊格式】按钮，这里可以查找那些在普通页面中无法看到的标记，比如“手动换行符”、“制表符”、“分节符”等等，这些在一般的设置中无法看见，但我们可以在『开始选项卡』- 「段落组」~【显示/隐藏编辑标记】（或【Ctrl+Shift+8】快捷键）打开。</p>
+
+                    <figure class="img">
+                        <img src="Images/编辑标记.jpg" alt="编辑标记" />
+                        <figcaption>编辑标记</figcaption>
+                    </figure>
+                    <p>特殊格式包括：任意单个数字（仅用于查找框）、图形、手动换行符、1/4全角空格、长划线、短划线、脱字号^、分栏符、分节符、省略号、全角省略号、无宽非分隔符、不间断空格、不间断连字符、¶段落符号、§分节符、脚注标记、可选连字符、空白区域、手动分页符、尾注标记（仅用于查找框）、域(仅用于查找框)、Unicode字符、全角空格、批注（仅用于查找框）等</p>
+                    <p>我们在网上复制的文章粘贴到Word中会存在一些默认的格式，如果你无法删除掉，可以打开编辑标记，查看这些标记是什么，然后就可以替换删除了，而常见的就是“手动换行符”和“自动换行符”与“制表位”。 比如下面的动图，如果我们使用【Backspace】键删除，无法删除文本前面的空格，只会删除前一行的文字，打开编辑标志，原来这里有一个“分节符”。这里需要定位到分节符的前面文本，使用【Del】键删除即可。</p>
+
+                    <figure class="img">
+                        <img src="Images/分节符测试.gif" alt="分节符测试" />
+                        <figcaption>分节符测试</figcaption>
+                    </figure>
+                    <p class="verb">小技巧：删除空行，查找两个“段落标记”(^p)，替换为一个“段落标记”</p>
+
+
+                    <h4>通配符替换</h4>
+                    <p>Word中通配符类似于许多编程语言的正则表达式，具有很强大的功能，如果你能灵活运用，会大大提高你的排版效率</p>
+                    <p class="stronger">使用该功能请在更多窗口中勾选“使用通配符”选项</p>
+                    <p>首先介绍一下通配符的查找基本使用方法</p>
+                    <table>
+                        <caption>仅用于查找框的操作（请将换行和标点视作一个字符）</caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">序号</th>
+                                <th rowspan="2">选择操作</th>
+                                <th colspan="2">输入格式</th>
+                                <th colspan="2">查找结果</th>
+                                <th rowspan="2">备注</th>
+
+                            </tr>
+                            <tr>
+                                <th>标准示例</th>
+                                <th>实际输入</th>
+                                <th>找到结果</th>
+                                <th>未找到结果</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>任意单个字符</td>
+                                <td>?</td>
+                                <td>??国</td>
+                                <td>爪哇国、孟加拉国</td>
+                                <td>美国</td>
+                                <td>词汇之前无字符</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>零个或多个字符</td>
+                                <td>*</td>
+                                <td>*国</td>
+                                <td>美国、孟加拉国、国家</td>
+                                <td></td>
+                                <td>词汇之前无字符</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>指定字符之一</td>
+                                <td>[xy]</td>
+                                <td>[学硕博]士</td>
+                                <td>学士、硕士、博士</td>
+                                <td>进士、壮士</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>排除所有指定字符</td>
+                                <td>[!xy]</td>
+                                <td>[!学硕博]士</td>
+                                <td>进士、壮士</td>
+                                <td>学士、硕士、博士</td>
+                                <td>!(x||y)或!x&amp;&amp;!y</td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>指定范围内的任意单个字符</td>
+                                <td>[x-y]</td>
+                                <td>[a-e]ay</td>
+                                <td>bay、day</td>
+                                <td>lay、gay</td>
+                                <td>指定范围的字符必须用升序</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>指定范围外的任意单个字符</td>
+                                <td>[!x-y]</td>
+                                <td>[!c-f]ay</td>
+                                <td>bay、gay、lay</td>
+                                <td>cay、day</td>
+                                <td>指定范围的字符必须用升序</td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td>指定前一字符或表达式的个数</td>
+                                <td>xa{n}</td>
+                                <td>go{2}gle</td>
+                                <td>google</td>
+                                <td>gogle、goooogle</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>指定前一字符或表达式个数范围</td>
+                                <td>xa{m,n}</td>
+                                <td>go{2,4}le</td>
+                                <td>goole、goooole</td>
+                                <td>goooooole</td>
+                                <td>包括m和n个</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>指定前一字符或表达式最低个数</td>
+                                <td>xa{m,}</td>
+                                <td>go{2,}gle</td>
+                                <td>google、gooooogle、goooooogle</td>
+                                <td>gogle</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>一个及以上的前一字符或表达式</td>
+                                <td>xa@</td>
+                                <td>cho@se</td>
+                                <td>chose、choose</td>
+                                <td>chse</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>指定起始字符串</td>
+                                <td>&lt;x</td>
+                                <td>&lt;ag</td>
+                                <td>ago、agree、again</td>
+                                <td>lag</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12&nbsp;&nbsp;&nbsp;</td>
+                                <td>指定结尾字符串</td>
+                                <td>&gt;x</td>
+                                <td>en&gt;</td>
+                                <td>ten、pen、men</td>
+                                <td>development</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>下面举一些比较常见的例子：</p>
+                    <table>
+                        <caption>勾选通配符的操作功能</caption>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>操作</th>
+                                <th>格式</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>任意单个数字</td>
+                                <td>[0-9]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>任意单个英文字母</td>
+                                <td>[a-zA-Z]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>任意单个小写英文字母</td>
+                                <td>[a-z]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>任意英文单词</td>
+                                <td>&lt;[a-zA-Z]*[a-zA-Z]&gt;</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>所有西文字符</td>
+                                <td>[^1-^127]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>所有中文汉字和中文标点</td>
+                                <td>[!^1-^127]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>所有中文汉字</td>
+                                <td>[一-
+                                    <ruby>龥
+                                        <rt>yù</rt>
+                                    </ruby>] or [一-
+                                    <ruby>﨩
+                                        <rt>dǎo</rt>
+                                    </ruby>]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>所有中文标点</td>
+                                <td>[!一-龥^1-^127]</td>
+                                <td>仅用于查找框</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>段落标记</td>
+                                <td>^13</td>
+                                <td>常用</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>制表符</td>
+                                <td>^t</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>11</td>
+                                <td>“Windows 剪贴板”的内容</td>
+                                <td>^c</td>
+                                <td>仅用于替换框</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>“查找内容”框的内容</td>
+                                <td>^&amp;</td>
+                                <td>仅用于替换框（常用）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>其他提示：</p>
+                    <ul>
+                        <li>转换大小写请使用【Shift+F3】快捷键或『开始选项卡』- 「字体组」~【更改大小写】来进行更改。</li>
+
+                        <figure class="img">
+                            <img src="Images/更改大小写.jpg" alt="更改大小写" />
+                            <figcaption>更改大小写</figcaption>
+                        </figure>
+                        <li>中英文标点互转请参照宏替换部分</li>
+                        <li>如果不勾选使用通配符一般的格式如“等在“特殊格式”按钮中都有，就不一一说明了。</li>
+                        <li>另外注意，勾选通配符后部分版本不在支持^g的嵌入式图形的替换，请取消勾选使用通配符。</li>
+                    </ul>
+
+
+                    <p>另外，使用通配符后可以使用<strong>表达式</strong>，查找“y(xa)b”替换为“\n”。比如下面的例子：</p>
+                    <p>在写文章中将google、gooooogle（还有不同零的）等错误拼成了glooge、gloooooge，如何才能依次完成替换呢？</p>
+                    <p class="verb">这里的难点是其中的字母“o”的数量不确定。</p>
+                    <p>我们可以在查找框中输入“gl(o{2,5})ge”，在替换框中输入“g\1gle”，</p>
+                    <p class="verb">如果您需要字母的大小写也要一一对应，请使用宏或根据大小写区分进行多次查找与替换。</p>
+                    <p>这里“\1”表示查找框的第一个“()”内的内容，当然，您可以使用多个表达式。</p>
+                    <p>使用多个表达式最常用的例子就是转置日期和姓氏名称</p>
+                    <p>以转置日期为例：比如我们文中的部分日期格式为“5-1-2018”，我们想将其全部转化为“2018-05-31”这样的格式</p>
+                    <p>查找“([0-9]{1,2})-([0-9]{1,2})-([0-9]{4})”替换为“\3-\1-\2”</p>
+                    <p>如图：</p>
+                    <figure class="img">
+                        <img src="Images/日期格式替换.jpg" alt="日期格式替换" />
+                        <figcaption>日期格式替换</figcaption>
+                    </figure>
+                    <p class="verb">如果需要将年份18替换为2018需要另一步操作，需要先查找“([0-9]{1,2})-([0-9]{1,2})-([0-9]{2})”替换为“20\3-\1-\2”然后进行上述操作，同理，月日的替换同样</p>
+                    <p>另外为了更精确的查找，你还可以把以上的通配符联合起来使用，如：输入“&lt;(ag)*(er)&gt;”则表示查找所有以“ag”开头并且以“er”结尾的单词，注意这时需要用括号将来区分开不同的查找规则。</p>
+                    <p class="stronger">最后还要注意如果要查找已经被定义为通配符的字符，如“*”、“?”等字符，必须在该字符前面加上反斜杠“\”以转义，如输入“\*”则表示查找字符“*”。</p>
+
+
+                    <h4>宏替换</h4>
+                    <blockquote>
+                        宏是一个批量处理程序命令，正确地运用它可以提高工作效率。微软的office软件允许用户自己编写格式为VBA的脚本来增加其灵活性，进一步扩充它的能力。
+                    </blockquote>
+                    <p class="verb">这里我们只展示一下其中的简单查找替换的格式代码，具体请参见另外一部分内容<a href"#Macro">Word宏录制、修改、删除、运行</a></p>
+                    <br />
+
+                    <p>修改错误glo{2,5}ge为go{对应个数}gle（普通宏替换）</p>
+                    <pre>Sub 普通宏()
+'
+'这里是注释
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    Selection.Find.Replacement.Highlight = True
+    With Selection.Find
+        .Text = "gl(o{2,5})ge" '这里为查找内容
+        .Replacement.Text = "g\1gle" '这里为替换内容
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchCase = False'勾选通配符后这项为灰色，但区分大小写，如全部匹配，请使用“[aA]”格式
+        .MatchWholeWord = False
+        .MatchByte = False
+        .MatchAllWordForms = False
+        .MatchSoundsLike = False
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+End Sub</pre>
+
+                </div>
+
+                <div>
+                    <br />
+                    <p>点击<a href="https://support.office.com/zh-cn/article/%e6%9f%a5%e6%89%be%e5%92%8c%e6%9b%bf%e6%8d%a2-Word-%e6%96%87%e6%a1%a3%e4%b8%ad%e7%9a%84%e6%96%87%e6%9c%ac%e5%92%8c%e5%85%b6%e4%bb%96%e6%95%b0%e6%8d%ae-c6728c16-469e-43cd-afe4-7708c6c779b7?NS=WINWORD&amp;Version=16&amp;SysLcid=2052&amp;UiLcid=2052&amp;AppVer=ZWD160&amp;HelpId=33&amp;ui=zh-CN&amp;rs=zh-CN&amo;ad=CN">这里</a>查看查找与替换微软官方帮助文档。</p>
+                </div>
+
+            </details>
+
+
+            <h3>快速定位（F5）</h3>
+            <progress></progress>
+
+            <figure class="img">
+                <img src="Images/快速定位.png" Alt="快速定位" />
+                <figcaption>快速定位</figcaption>
+            </figure>
+
+            <h3>浏览设置</h3>
+            <progress></progress>
+
+            <ul>
+                <li>上下窗口浏览修改</li>
+                <p>视图选项卡——&gt;窗口——&gt;拆分</p>
+
+                <li>并排查看</li>
+                <p>视图选项卡——&gt;窗口——&gt;并排查看（需打开两个以上文件，如：论文与论文的要求）</p>
+            </ul>
+
+            <h3>大纲视图</h3>
+            <progress></progress>
+
+            <p>快速调整大纲级别</p>
+            <p>视图选项卡——&gt;视图——大纲</p>
+
+
+            <h3 id="Macro">宏</h3>
+            <progress></progress>
+
+
+            <p>重复多个步骤，可录制多个宏</p>
+            <p>『视图选项卡』-「宏」-【宏下拉选项】或开发选项（需要自己在选项卡中开启）或程序底部文档信息区（如果没有可以在底部右击选择宏录制）</p>
+            <figure class="img">
+                <img src="Images/宏录制.png" Alt="宏录制" />
+                <figcaption>宏录制</figcaption>
+            </figure>
+
+            <p>应用：如本文的插入题注部分</p>
+
+            <p>详细内容请参见下面这一部分：</p>
+
+            <details>
+                <summary>Word宏</summary>
+
+                <div class="foreWord">
+                    <p>在处理文档的时候，我们时常因大量的重复性的操作而忙的焦头烂额，比如统一设置表格的样式，一篇文章有很多的表格，即使使用“定位”操作也会很耗时间，而“宏”就可以实现一键选中文档所有的表格。</p>
+                    <blockquote>
+                        <p>在 Word 中，您可以通过创建和运行宏自动处理常用的任务。宏是一系列命令和组合在一起作为单个命令来自动完成任务的说明进行操作。</p>
+                    </blockquote>
+                    <p>通俗地讲，宏类似PS软件的“录制动作”，而在Word中设置标题和列表格式等也可以看做是一系列的宏操作。</p>
+                </div>
+
+                <div class="content">
+
+                    <h4>宏的查看（宏管理器）【Alt+F8】</h4>
+                    <p>首先介绍一下如何查看“宏”：</p>
+                    <ul>
+                        <li>在『视图选项卡』-「宏组」~ 【宏】|【宏扩展-查看宏】</li>
+                        <figure class="img">
+                            <img src="Images/视图宏.jpg" alt="视图宏.jpg" />
+                            <figcaption>视图宏</figcaption>
+                        </figure>
+                        <li>在『开发工具选项卡』-「宏组」~ 【宏】</li>
+                        <figure class="img">
+                            <img src="Images/开发者宏.jpg" alt="开发者宏.jpg" />
+                            <figcaption>开发者宏</figcaption>
+                        </figure>
+                        <p class="stronger">如果您的Word中没有“开发者选项卡”，可以在『文件选项卡』-「选项」-【自定义功能区】-勾选“开发工具”。</p>
+                        <img src="Images/显示开发者选项.jpg" alt="显示开发者选项.jpg" />
+                        <li>您还可以将上面的命令国定到“快速访问工具栏”中，在上述的命令位置『右键』- 【添加到快速访问工具栏】</li>
+                        <figure class="img">
+                            <img src="Images/添加快速访问.jpg" alt="添加快速访问.jpg" />
+                            <figcaption>添加快速访问</figcaption>
+                        </figure>
+                        <p>这样您在快速访问工具栏中可以看到这样的图标，之后点击它可以快速查看“宏”</p>
+                        <figure class="img">
+                            <img src="Images/快速工具栏.jpg" alt="快速工具栏.jpg" />
+                            <figcaption>快速工具栏</figcaption>
+                        </figure>
+                        <p class="verb">快速访问工具栏在您的程序的左上角，功能区的上/下方（可自行设置）</p>
+                        <figure class="img">
+                            <img src="Images/功能区下快速访问工具栏.jpg" alt="功能区下快速访问工具栏.jpg" />
+                            <figcaption>功能区下快速访问工具栏</figcaption>
+                        </figure>
+                    </ul>
+
+
+                    <h4>宏的录制</h4>
+                    <p>宏的录制可以在上述前两种方法相应位置的周围找到，还可以在“状态栏”中找到：</p>
+                    <p class="verb">状态栏是您程序最下方的一行有字数统计等功能的区域</p>
+                    <p>在“状态栏”右键，勾选“录制宏”即可使用</p>
+                    <figure class="img">
+                        <img src="Images/状态栏录制宏.jpg" alt="状态栏录制宏.jpg" />
+                        <figcaption>状态栏录制宏</figcaption>
+                    </figure>
+
+                    <p>接下来我们来演示一下如何录制宏（使用状态栏中的宏操作）</p>
+                    <ol>
+                        <li>1. 左键单击“录制宏”按钮</li>
+                        <li>2. 键入宏的名称和选择保存位置</li>
+                        <figure class="img">
+                            <img src="Images/录制宏选项.jpg" alt="录制宏选项.jpg" />
+                            <figcaption>录制宏选项</figcaption>
+                        </figure>
+                        <p class="stronger">若要在创建的所有新文档中使用此宏，请确保“将宏保存在”框中选择了“所有文档 (Normal.dotm)”。</p>
+                        <li>3. 将宏指定</li>
+                        <p>这里有两种运行方式可以选择（也可以不选，之后在宏管理器中查看运行）</p>
+                        <ul>
+                            <li>通过单击按钮运行宏</li>
+                            <ol>
+                                <li>① 单击“按钮”</li>
+                                <li>② 在展开的窗口中将刚才的宏添加到“快速工具栏”中</li>
+                                <figure class="img">
+                                    <img src="Images/选择宏添加到快速工具栏.jpg" alt="选择宏添加到快速工具栏.jpg" />
+                                    <figcaption>选择宏添加到快速工具栏</figcaption>
+                                </figure>
+                                <li>③单击“确定”。</li>
+                            </ol>
+                            <li>通过按键盘快捷方式运行宏</li>
+                            <ol>
+                                <li>① 单击“键盘”</li>
+                                <li>② 在“请按新快捷键”框中键入组合键。</li>
+                                <figure class="img">
+                                    <img src="Images/指定宏按键.jpg" alt="指定宏按键.jpg" />
+                                    <figcaption>指定宏按键</figcaption>
+                                </figure>
+                                <p>检查该组合键是否已指定给其他项目。如果已被指定，请尝试其他组合键。</p>
+                                <li>③ 单击“指定”。</li>
+                            </ol>
+                        </ul>
+                        <li>4. 进行宏的录制操作</li>
+                        <p>现在，便可以开始录制步骤了。单击命令或者按下任务中每个步骤对应的键。Word 将会录制您的单击（左右键）和键击动作。</p>
+                        <p class="stronger">注: 录制宏时，使用键盘选择文本。宏不会录制使用鼠标所做的选择。</p>
+                        <p class="verb">类似鼠标拖动来选择文本、改变表格大小、改变缩进等动作均无法被录入。</p>
+                        <br />
+                        <p class="verb">如果您想中途暂停录制，请到上面介绍的查看宏的周围点击“暂停录制”即可</p>
+                        <figure class="img">
+                            <img src="Images/宏暂停.jpg" alt="宏暂停.jpg" />
+                            <figcaption>宏暂停</figcaption>
+                        </figure>
+                        <li>5. 停止录制</li>
+                        <p>在上述宏的录入地方中找到“停止录制”，左键单击即可。</p>
+                        <figure class="img">
+                            <img src="Images/停止录制.jpg" alt="停止录制.jpg" />
+                            <figcaption>停止录制</figcaption>
+                        </figure>
+                    </ol>
+
+
+                    <h4>宏的修改（另一种创建宏的方式）</h4>
+                    <p>若要节省花费在经常执行的任务上的时间，可以将多个步骤捆绑到一个宏中。</p>
+                    <ol>
+                        <li>1. 单击上述介绍的“查看宏”按钮，打开宏窗口</li>
+                        <li>2. 在宏名框中，键入宏的名称。</li>
+                        <figure class="img">
+                            <img src="Images/VBA新宏.jpg" alt="VBA新宏.jpg" />
+                            <figcaption>VBA新宏</figcaption>
+                        </figure>
+                        <p class="stronger">>Word 中相同的内置宏名称提供新宏，则新宏操作将替换内置宏。要查看内置宏的列表，请单击中的宏列表中的Word 命令。</p>
+                        <p class="stronger">注宏的名称不能存在空格</p>
+                        <li>3. 在其中的宏列表中，单击模板或要在其中存储该宏的文档。</li>
+                        <p class="stronger">要使您的宏在所有文档中，请务必单击Normal.dotm。</p>
+                        <li>4. 单击“创建”按钮，打开 Visual Basic 编辑器。</li>
+                        <li>5. 在这里编辑您的代码</li>
+                        <p class="verb">有关详细信息，请单击在帮助菜单上的Microsoft Visual Basic 帮助，或按 F1。</p>
+                        <li>6. 保存【Ctrl+S】后关闭即可创建</li>
+                    </ol>
+                    <p class="verb">修改宏也类似，在第一步后选择相应的宏名，单击后面的修改即可。就不截图了。</p>
+                    <p>对于VBA的学习，这里不做介绍，请大家自行搜索学习（主要是我不会^_^） 教大家一些简单的方法： 大家可以根据需要先录制一部分宏，然后查看代码。 对比这些代码，找出其中相同的部分，然后进行模仿组合，就可快速学会一些简单的代码。 可以借助翻译软件来翻译部分“英文操作名”，还可以借助搜索找到类似的操作。 </p>
+
+
+
+                    <h4>宏的执行</h4>
+                    <p>通过上述的方法录制的宏的执行方法略有不同:</p>
+                    <ul>
+                        <li>“按钮宏”需单击“快速工具栏”中的对应宏</li>
+                        <figure class="img">
+                            <img src="Images/快速宏执行.jpg" alt="快速宏执行.jpg" />
+                            <figcaption>快速宏执行</figcaption>
+                        </figure>
+                        <li>而使用“键盘宏”需要按对用的快捷键即可</li>
+                    </ul>
+                    <p>这里再介绍一下“其他方式宏”（通用）的调用执行方法</p>
+                    <ol>
+                        <li>单击上述介绍的“查看宏”按钮，打开宏窗口</li>
+                        <figure class="img">
+                            <img src="Images/宏查看运行.jpg" alt="宏查看运行.jpg" />
+                            <figcaption>宏查看运行</figcaption>
+                        </figure>
+                        <li>在“宏名”下面的列表中，单击要运行的宏。</li>
+                        <li>单击“运行”即可运行对应的宏。</li>
+                        <p class="verb">在这里您还可以选择“单步执行”，会打开编程界面，您可以按【F5】继续运行宏</p>
+                        <figure class="img">
+                            <img src="Images/宏单步执行.jpg" alt="宏单步执行.jpg" />
+                            <figcaption>宏单步执行</figcaption>
+                        </figure>
+                    </ol>
+
+
+                    <h4>宏文件的保存</h4>
+                    <p>若想在不同的电脑使用相同的宏处理，需要将宏保存成文件。</p>
+                    <ol>
+                        <li>在『文件选项卡』~ 【另存为】后缀名为“*.docm”（启用宏的 Word 文档）或“*.dotm”（启用宏的 Word 模板）的文件。</li>
+                        <li>复制这个文件到其他路径</li>
+                        <li>之后打开该文件就可以使用其中的宏了</li>
+                    </ol>
+
+                    <h4>实例</h4>
+                    <p>前面说了很多，但都是一些基础的操作方法，这里给出经过我亲自测试的宏动作来实现不同功能</p>
+                    <ul>
+
+                        <p><span class="file"><a href="资源/选择所有表格.vba">选择所有表格</a></span></p>
+
+                        <figure class="img">
+                            <img src="Images/选择所有表格.gif" alt="选择所有表格.gif" />
+                            <figcaption>选择所有表格</figcaption>
+                        </figure>
+
+                        <li><span class="file"><a href="资源/非嵌入式图片转为嵌入式图片.vba">非嵌入式图片转为嵌入式图片</a></span></li>
+                        <p>我们都知道在Word中的查找与替换中，通配符“^g”只能匹配嵌入式图片，而且在Word中嵌入式图片就像文字一样，可以很好得编辑。如何将非嵌入式图片转为嵌入式图片呢？</p>
+
+
+                        <p>如果想修改图片的大小，可以使用这两个宏命令</p>
+
+                        <p><span class="file"><a href="资源/设置图片大小.vba">设置图片大小</a></span></p>
+                        <p class="verb">嵌入式会根据比例来更改大小，非嵌入式会根据具体数据来更改大小</p>
+
+                        <p><span class="file"><a href="资源/设置图片缩放.vba">设置图片缩放</a></span></p>
+
+
+                        <li>改变所有C语言中的关键字颜色及字体格式（多个词汇统一替换为相同格式）</li>
+
+                        <p>在学习C语言过程中，老师让我们上交每个程序的代码，但将代码复制到Word中会失去之前的颜色（因为这部分是IDE所自有的），但上交一份美观的代码不是更好吗？要让文字能够复制，且其颜色与编辑器同步，但C语言的程序有很多，一个一个更改会浪费大量的时间，下面的这段代码会将C语言的所有关键字更改统一颜色</p>
+
+                        <p><span class="file"><a href="资源/改变字符串数组颜色.vba">改变字符串数组颜色</a></span></p>
+                        <p class="tips">在查找与替换过程中由于有注释的存在，需将注释这部分放在最后</p>
+
+
+                        <li>中英文符号对应替换（两段文本对应替换）</li>
+                        <p>有时候我们在中英文切换过程中忽略了标点的中英文，比如在论文中我们会插入一些英文学术关键词之后可能将后面的“，”打为“,”，这是不符合论文规范的，如何将英文标点与中文标点互相转化呢？</p>
+                        <p><span class="file"><a href="资源/中英文标点互换.vba">中英文标点互换</a></span></p>
+                    </ul>
+
+                </div>
+
+                <div class="end">
+                    需要特殊说明一下：
+                    <blockquote> Visual Basic for Applications (VBA)，是 Microsoft Office 里的一种编程语言. 但由上面的定义，它完全不是一种宏语言。然而，它的功能已经从中发展并最终替代了用户应用程序的宏思想，所以他被广泛地错误地称为是一种宏语言。 VBA 可以访问许多操作系统函数并支持文档打开时自动执行宏。这使得用这种语言写计算机病毒成为可能。</blockquote>
+                </div>
+
+            </details>
+
+
+            <h3 >历史记录</h3>
+            <progress></progress>
+
+            <p>在快速工具栏中单击撤销下拉箭头</p>
+            <figure class="img">
+                <img src="Images/历史记录.png" Alt="历史记录" />
+                <figcaption>历史记录</figcaption>
+            </figure>
+
+
+            <h3>表格法对齐文本</h3>
+            <progress></progress>
+
+            <p>对于有绝对对齐关系的文字，可以使用表格，然后选择无边框</p>
+
+
+            <h3 id="GongShi">Unicode实现公式快速录入</h3>
+            <progress></progress>
+
+            <p>我们可以使用自带的文本转公式，实现公式的快速录入，具体可参考：</p>
+
+            <details>
+
+                <summary>Unicode实现公式快速录入</summary>
+
+
+                <p>我们使用插入公式的方法，对于一些需要插入大量公式的文章或书籍来说，就显得力不从心。而科学界一般使用LaTeX进行公式输入，但这种方法需要编程，而最主要的是，它同我们看见的不太一样，比如我们输入(a+b)/c这个公式，LaTeX需要这样：</p>
+                <p>\frac{a + b}{c}</p>
+                <p>如果你对frac和其他表示运算的符号不懂，就会非常麻烦。</p>
+                <p>我也一直在寻找这样一个即可以简单输入，所见似所得，而且不需要鼠标一个一个点击的方法。直到我在B站找到一个<a href="">视频</a>，视频介绍了使用Unicode进行输入的方法，很好地满足了我这一需求。在此表示感谢。</p>
+                <p>不过，视频中没有介绍全面，比如重积分和矢量符号等，没给出具体的说明，但给了一个参考文档，而我又在网上找到一些常用的数学、物理公式，对其所涉及的知识点进行了归类，下面就教给大家。</p>
+                <p>我们知道，使用点选的方式，输入公式，无非是输入如下的结构和符号：</p>
+                <p>符号：希腊字母、字母类符号、运算符、箭头、手写体、求反关系运算符、几何图形。</p>
+
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/希腊字母.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/字母类符号.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/运算符符号.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/箭头.jpg" alt="" />
+                </figure>
+
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/手写体.jpg" alt="" />
+                </figure>
+
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/求反关系运算符.jpg" alt="" />
+                </figure>
+
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/几何图形.jpg" alt="" />
+                </figure>
+
+                <p>结构：</p>
+
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/分式.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/上下标.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/根式.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/微积分.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/大型运算符.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/括号.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/函数.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/矩阵.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/极限和对数.jpg" alt="" />
+                </figure>
+                <figure>
+                    <figcaption></figcaption>
+                    <img src="Images/结构运算符.jpg" alt="" />
+                </figure>
+
+                <br />
+                <br />
+
+                <table>
+
+                    <caption>希腊字母</caption>
+                    <tbody>
+                        <tr>
+                            <th>序号</th>
+                            <th>小写</th>
+                            <th>英文</th>
+                            <th>英语音标注音</th>
+                            <th>汉语名称</th>
+                            <th>大写</th>
+                            <th>常用指代意义</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>α</td>
+                            <td>alpha</td>
+                            <td>/'ælfə/</td>
+                            <td>阿尔法</td>
+                            <td>Α</td>
+                            <td>角度、系数、角加速度、第一个、电离度、转化率</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>β</td>
+                            <td>beta</td>
+                            <td>/'bi:tə/ 或 /'beɪtə/</td>
+                            <td>贝塔</td>
+                            <td>Β</td>
+                            <td>磁通系数、角度、系数</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>γ</td>
+                            <td>gamma</td>
+                            <td>/'gæmə/</td>
+                            <td>伽玛</td>
+                            <td>Γ</td>
+                            <td>电导系数、角度、比热容比</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>π</td>
+                            <td>pi</td>
+                            <td>/paɪ/</td>
+                            <td>派</td>
+                            <td>∏</td>
+                            <td>圆周率、π(n)表示不大于n的质数个数、连乘</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>ω</td>
+                            <td>omega</td>
+                            <td>/'əʊmɪɡə/或 /oʊ'meɡə/</td>
+                            <td>奥米伽/欧米伽</td>
+                            <td>Ω</td>
+                            <td>欧姆、角速度、角频率、交流电的电角度、化学中的质量分数、不饱和度</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>θ</td>
+                            <td>theta</td>
+                            <td>/'θi:tə/</td>
+                            <td>西塔</td>
+                            <td>Θ</td>
+                            <td>温度、角度</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>λ</td>
+                            <td>lambda</td>
+                            <td>/'læmdə/</td>
+                            <td>拉姆达</td>
+                            <td>∧</td>
+                            <td>波长、体积、导热系数 普朗克常数</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>φ</td>
+                            <td>phi</td>
+                            <td>/faɪ/</td>
+                            <td>斐</td>
+                            <td>Φ</td>
+                            <td>磁通量、电通量、角、透镜焦度、热流量、电势、直径、欧拉函数</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>ρ</td>
+                            <td>rho</td>
+                            <td>/rəʊ/</td>
+                            <td>柔</td>
+                            <td>Ρ</td>
+                            <td>电阻率、柱坐标和极坐标中的极径、密度、曲率半径</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>σ,ς</td>
+                            <td>sigma</td>
+                            <td>/'sɪɡmə/</td>
+                            <td>西格马</td>
+                            <td>∑</td>
+                            <td>总和、表面密度、跨导、应力、电导率</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>η</td>
+                            <td>eta</td>
+                            <td>/'i:tə/</td>
+                            <td>伊塔</td>
+                            <td>Η</td>
+                            <td>迟滞系数、机械效率</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>μ</td>
+                            <td>mu</td>
+                            <td>/mju:/</td>
+                            <td>谬</td>
+                            <td>Μ</td>
+                            <td>磁导率、微、动摩擦系（因）数、流体动力黏度、货币单位,莫比乌斯函数</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>δ</td>
+                            <td>delta</td>
+                            <td>/'deltə/</td>
+                            <td>得尔塔</td>
+                            <td>Δ</td>
+                            <td>变化量、焓变、熵变、屈光度、一元二次方程中的判别式、化学位移</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>τ</td>
+                            <td>tau</td>
+                            <td>/tɔ:/ 或 /taʊ/</td>
+                            <td>陶</td>
+                            <td>Τ</td>
+                            <td>时间常数、切应力、2π（两倍圆周率）</td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td>ξ</td>
+                            <td>xi</td>
+                            <td>希腊 /ksi/英美 /ˈzaɪ/ 或 /ˈsaɪ/</td>
+                            <td>克西</td>
+                            <td>Ξ</td>
+                            <td>随机变量、（小）区间内的一个未知特定值</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>ε</td>
+                            <td>epsilon</td>
+                            <td>/'epsɪlɒn/</td>
+                            <td>艾普西隆</td>
+                            <td>Ε</td>
+                            <td>对数之基数、介电常数、电容率、应变</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>ν</td>
+                            <td>nu</td>
+                            <td>/nju:/</td>
+                            <td>纽</td>
+                            <td>Ν</td>
+                            <td>磁阻系数、流体运动粘度、光波频率、化学计量数</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>υ</td>
+                            <td>upsilon</td>
+                            <td>/ˈipsɪlon/或 /ˈʌpsɪlɒn/</td>
+                            <td>阿普西龙</td>
+                            <td>Υ</td>
+                            <td>位移</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>κ</td>
+                            <td>kappa</td>
+                            <td>/'kæpə/</td>
+                            <td>卡帕</td>
+                            <td>Κ</td>
+                            <td>介质常数、绝热指数</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>χ</td>
+                            <td>chi</td>
+                            <td>/kaɪ/</td>
+                            <td>希</td>
+                            <td>Χ</td>
+                            <td>统计学中有卡方(χ^2)分布</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>ψ</td>
+                            <td>psi</td>
+                            <td>/ps/</td>
+                            <td>普西</td>
+                            <td>Ψ</td>
+                            <td>角速、介质电通量、ψ函数、磁链</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>ι</td>
+                            <td>iota</td>
+                            <td>/aɪ'əʊtə/</td>
+                            <td>幺塔</td>
+                            <td>Ι</td>
+                            <td>微小、一点</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>ζ</td>
+                            <td>zeta</td>
+                            <td>/'zi:tə/</td>
+                            <td>泽塔</td>
+                            <td>Ζ</td>
+                            <td>系数、方位角、阻抗、相对黏度</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>ο</td>
+                            <td>omicron</td>
+                            <td>/əuˈmaikrən/或 /ˈɑmɪˌkrɑn/</td>
+                            <td>奥米克戎</td>
+                            <td>Ο</td>
+                            <td>高阶无穷小函数</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+                我们这里用几个具体的案例来说明一下：
+
+                <ul>
+
+                    <li>Word会自动更正</li>
+
+                    这里我列举了可以自动更正的符号：也就是不需要任何附加输入，软件会自动更正。
+
+                    <table>
+                        <caption>自动更正符号</caption>
+                        <tbody>
+                            <tr>
+                                <th>序号</th>
+                                <th>自动更正前</th>
+                                <th>自动更正后</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>-&gt;</td>
+                                <td>→</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>&gt;=</td>
+                                <td>≥</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>&lt;=</td>
+                                <td>≤
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>/=</td>
+                                <td>≠</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>\=</td>
+                                <td>=</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>~=</td>
+                                <td>≌</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>-+</td>
+                                <td>∓</td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>+-</td>
+                                <td>±</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+                    <table>
+                        <caption>自动更正符号</caption>
+                        <tbody>
+                            <tr>
+                                <th>序号</th>
+                                <th>名称</th>
+                                <th>欲录入公式</th>
+                                <th>输入字符</th>
+                                <th>备注</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>横线分数</td>
+                                <td><img src="Images/横线分数.png" alt="" /></td>
+                                <td><span class="text">a/b&nbsp;</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>数学除号</td>
+                                <td><img src="Images/数学除号.png" alt="" /></td>
+                                <td><span class="text">a\div&nbsp;b=c</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>多段除法</td>
+                                <td><img src="Images/多段除法.png" alt="" /></td>
+                                <td><span class="text">(a/(b+c))/(d/e+f)&nbsp;</span></td>
+                                <td>使用括号进行分组</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>错位除法</td>
+                                <td><img src="Images/错位除法.png" alt="" /></td>
+                                <td><span class="text">a\sdiv&nbsp;b</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>正位除法</td>
+                                <td><img src="Images/正位除法.png" alt="" /></td>
+                                <td><span class="text">(a/(b+c))&nbsp;\ldiv&nbsp;(d/e+f)&nbsp;</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>上下标</td>
+                                <td><img src="Images/上下标.png" alt="" /></td>
+                                <td><span class="text">a_1^2&nbsp;</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>求和堆叠对象</td>
+                                <td><img src="Images/求和堆叠对象.png" alt="" /></td>
+                                <td><span class="text">(a+b)^n&nbsp;=\sum&nbsp;_(k=0)^n&nbsp;(n\atop&nbsp;k&nbsp;)a^kb^(n-k)</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>微积分符号</td>
+                                <td><img src="Images/微积分.png" alt="" /></td>
+                                <td><span class="text">\int&nbsp;_0^1&nbsp;x\dd&nbsp;x=1/2</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>矩阵</td>
+                                <td><img src="Images/矩阵.png" alt="" /></td>
+                                <td><span class="text">\matrix&nbsp;(a&amp;b&amp;c@d&amp;e&amp;f)&nbsp;</span></td>
+                                <td>注意用括号包裹矩阵的内容区域；可以利用矩阵进行对齐</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>10</td>
+                                <td>字符串</td>
+                                <td><img src="Images/字符串.png" alt="" /></td>
+                                <td><span class="text">"rate"="distance"/'time'&nbsp;</span></td>
+                                <td>单双引号均可，但一定为西文</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>乘幂号</td>
+                                <td><img src="Images/乘幂号.png" alt="" /></td>
+                                <td><span class="text">r\hat&nbsp;&nbsp;</span></td>
+                                <td>两次空格</td>
+                            <tr>
+                                <td>12</td>
+                                <td>绝对值与大括号</td>
+                                <td><img src="Images/绝对值与大括号.png" alt="" /></td>
+                                <td><span class="text">|x|&nbsp;={\matrix&nbsp;(x&amp;x&gt;=0@-x&amp;x&lt;0)&nbsp;}&nbsp;=|-x|&nbsp;</span></td>
+                                <td></td>
+                            <tr>
+                                <td>13</td>
+                                <td>关闭匹配</td>
+                                <td><img src="Images/关闭匹配.png" alt="" /></td>
+                                <td><span class="text">|x|&nbsp;={\matrix&nbsp;(x&amp;x&gt;=0@-x&amp;x&lt;0)&nbsp;}&nbsp;\close&nbsp;&nbsp;</span></td>
+                                <td></td>
+
+                            <tr>
+                                <td>14</td>
+                                <td>2~4次根式</td>
+                                <td><img src="Images/常见根式.png" alt="" /></td>
+                                <td><span class="text">\sqrt&nbsp;(a+b)&nbsp;</span><br /><br />
+                                    <span class="text">\cbrt&nbsp;(a+b)&nbsp;</span><br /><br />
+                                    <span class="text">\qdrt&nbsp;(a+b)&nbsp;</span></td>
+                                <td></td>
+
+                            <tr>
+                                <td>10</td>
+                                <td>任意次根式</td>
+                                <td><img src="Images/N次根式.png" alt="" /></td>
+                                <td><span class="text">\sqrt&nbsp;(8&amp;(a+b))&nbsp;</span></td>
+                                <td></td>
+
+
+                        </tbody>
+                    </table>
+
+
+                    <li>重积分</li>
+
+                    这部分待验证
+                    <li>矢量</li>
+
+
+                    <li>上大括号</li>
+
+                    <li>下大括号</li>
+
+                    <li>居中</li>
+
+                    <li>三点省略</li>
+
+                    <li>编号自动对齐</li>
+
+                    <li>均值</li>
+
+                    <li>无穷</li>
+
+                    <li>副本字符撇号</li>
+
+                </ul>
+
+            </details>
+
+
+
+            <h3>其他</h3>
+            <progress></progress>
+
+            <ul>
+                <li>封面使用部分框线的表格排版对齐文本</li>
+                <li> Ctrl +鼠标滚轮 调整页面显示比例</li>
+                <li>选中图片、形状等对象，按住 Ctrl +方向键可进行微调</li>
+            </ul>
+
+
+
+            <h2>其他问题</h2>
+
+            <p>让标题和正文始终处于同一页</p>
+            <p>题注和元素始终处于同一页</p>
+            <p>表格题头和下面的一行同处于同一页</p>
+            <p>表格表头和主体部分用不同样式控制，实现三段式表格</p>
+            <p>段落设置中有一个孤行控制</p>
+
+
+        </section>
+
+
+        <section>
+            <h2>后语</h2>
+            <p>这个文档拖拖拉拉用了我近两年的时间，从还未大学毕业就开始弄，一直到工作半年。</p>
+            <p>其中用了很多css3的新特性，又使用了jQuery等技术，一路从磕磕绊绊走过。</p>
+            <p>看到网上的教程，觉得只解决了部分问题，就一直在问，能否开发这样一个教程。</p>
+            <p>每当深夜来临时，我这样问自己，做这件事情到底值不值得。</p>
+            <p>你可以在微信中搜索「未央暮城」观看我的初稿，一路走过来，成长了不少。从最初只会使用红框，到现在可以轻松自如使用圆圈序号进行标注，</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </section>
+
+    </article>
+
+
+    <div id="allNav"></div>
+
+    <script src="Javascript/jquery-2.0.0.min.js"></script>
+    <script src="Javascript/order.js"></script>
+</body>
+
+</html>

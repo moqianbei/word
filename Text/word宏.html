@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="../../css/article.css" />
+	<link rel="stylesheet" href="../../css/mqbhl.css" />
+	<title>word宏</title>
+</head>
+
+『主|工具选项卡』-「组」~ 【命令】|【扩展】|【下拉】”或“『选中后右键』- 【命令】
+
+<body>
+	<article>
+		<h1>word宏</h1>
+		<address>
+			<span class="original">原创</span>
+			<time>2018-07-23</time>
+			<span class="author">莫浅北</span>
+			<span class="SubscriptionAccounts">未央暮城</span>
+		</address>
+		<img src="Word宏封面.jpg" alt="Word宏封面.jpg" class="cover" />
+		<div class="foreword">
+			<p>在处理文档的时候，我们时常因大量的重复性的操作而忙的焦头烂额，比如统一设置表格的样式，一篇文章有很多的表格，即使使用“定位”操作也会很耗时间，而“宏”就可以实现一键选中文档所有的表格。</p>
+			<blockquote>
+				<p>在 Word 中，您可以通过创建和运行宏自动处理常用的任务。宏是一系列命令和组合在一起作为单个命令来自动完成任务的说明进行操作。</p>
+			</blockquote>
+			<p>通俗地讲，宏类似PS软件的“录制动作”，而在Word中设置标题和列表格式等也可以看做是一系列的宏操作。</p>
+
+
+		</div>
+		<div class="content">
+
+			<h2>宏的查看（宏管理器）【Alt+F8】</h2>
+			<p>首先介绍一下如何查看“宏”：</p>
+			<ul>
+				<li>在『视图选项卡』-「宏组」~ 【宏】|【宏扩展-查看宏】</li>
+				<img src="视图宏.jpg" alt="视图宏.jpg" />
+				<li>在『开发工具选项卡』-「宏组」~ 【宏】</li>
+				<img src="开发者宏.jpg" alt="开发者宏.jpg" />
+				<p class="stronger">如果您的word中没有“开发者选项卡”，可以在『文件选项卡』-「选项」-【自定义功能区】-勾选“开发工具”。</p>
+				<img src="显示开发者选项.jpg" alt="显示开发者选项.jpg" />
+				<li>您还可以将上面的命令国定到“快速访问工具栏”中，在上述的命令位置『右键』- 【添加到快速访问工具栏】</li>
+				<img src="添加快速访问.jpg" alt="添加快速访问.jpg" />
+				<p>这样您在快速访问工具栏中可以看到这样的图标，之后点击它可以快速查看“宏”</p>
+				<img src="快速工具栏.jpg" alt="快速工具栏.jpg" />
+				<p class="verb">快速访问工具栏在您的程序的左上角，功能区的上/下方（可自行设置）</p>
+				<img src="功能区下快速访问工具栏.jpg" alt="功能区下快速访问工具栏.jpg" />
+			</ul>
+
+
+			<h2>宏的录制</h2>
+			<p>宏的录制可以在上述前两种方法相应位置的周围找到，还可以在“状态栏”中找到：</p>
+			<p class="verb">状态栏是您程序最下方的一行有字数统计等功能的区域</p>
+			<p>在“状态栏”右键，勾选“录制宏”即可使用</p>
+			<img src="状态栏录制宏.jpg" alt="状态栏录制宏.jpg" />
+
+			<p>接下来我们来演示一下如何录制宏（使用状态栏中的宏操作）</p>
+			<ol>
+				<li>1. 左键单击“录制宏”按钮</li>
+				<li>2. 键入宏的名称和选择保存位置</li>
+				<img src="录制宏选项.jpg" alt="录制宏选项.jpg" />
+				<p class="stronger">若要在创建的所有新文档中使用此宏，请确保“将宏保存在”框中选择了“所有文档 (Normal.dotm)”。</p>
+				<li>3. 将宏指定</li>
+				<p>这里有两种运行方式可以选择（也可以不选，之后在宏管理器中查看运行）</p>
+				<ul>
+					<li>通过单击按钮运行宏</li>
+					<ol>
+						<li>① 单击“按钮”</li>
+						<li>② 在展开的窗口中将刚才的宏添加到“快速工具栏”中</li>
+						<img src="选择宏添加到快速工具栏.jpg" alt="选择宏添加到快速工具栏.jpg" />
+						<li>③单击“确定”。</li>
+					</ol>
+					<li>通过按键盘快捷方式运行宏</li>
+					<ol>
+						<li>① 单击“键盘”</li>
+						<li>② 在“请按新快捷键”框中键入组合键。</li>
+						<img src="指定宏按键.jpg" alt="指定宏按键.jpg" />
+						<p>检查该组合键是否已指定给其他项目。如果已被指定，请尝试其他组合键。</p>
+						<li>③ 单击“指定”。</li>
+					</ol>
+				</ul>
+				<li>4. 进行宏的录制操作</li>
+				<p>现在，便可以开始录制步骤了。单击命令或者按下任务中每个步骤对应的键。Word 将会录制您的单击（左右键）和键击动作。</p>
+				<p class="stronger">注意: 录制宏时，使用键盘选择文本。宏不会录制使用鼠标所做的选择。</p>
+				<p class="verb">类似鼠标拖动来选择文本、改变表格大小、改变缩进等动作均无法被录入。</p>
+				<br />
+				<p class="verb">如果您想中途暂停录制，请到上面介绍的查看宏的周围点击“暂停录制”即可</p>
+				<img src="宏暂停.jpg" alt="宏暂停.jpg" />
+				<li>5. 停止录制</li>
+				<p>在上述宏的录入地方中找到“停止录制”，左键单击即可。</p>
+				<img src="停止录制.jpg" alt="停止录制.jpg" />
+			</ol>
+
+
+			<h2>宏的修改（另一种创建宏的方式）</h2>
+			<p>若要节省花费在经常执行的任务上的时间，可以将多个步骤捆绑到一个宏中。</p>
+			<ol>
+				<li>1. 单击上述介绍的“查看宏”按钮，打开宏窗口</li>
+				<li>2. 在宏名框中，键入宏的名称。</li>
+				<img src="VBA新宏.jpg" alt="VBA新宏.jpg" />
+				<p class="stronger">注意: 如果在 Word 中相同的内置宏名称提供新宏，则新宏操作将替换内置宏。要查看内置宏的列表，请单击中的宏列表中的Word 命令。</p>
+				<p class="stronger">注意宏的名称不能存在空格</p>
+				<li>3. 在其中的宏列表中，单击模板或要在其中存储该宏的文档。</li>
+				<p class="stronger">要使您的宏在所有文档中，请务必单击Normal.dotm。</p>
+				<li>4. 单击“创建”按钮，打开 Visual Basic 编辑器。</li>
+				<li>5. 在这里编辑您的代码</li>
+				<p class="verb">有关详细信息，请单击在帮助菜单上的Microsoft Visual Basic 帮助，或按 F1。</p>
+				<li>6. 保存【Ctrl+S】后关闭即可创建</li>
+			</ol>
+			<p class="verb">修改宏也类似，在第一步后选择相应的宏名，单击后面的修改即可。就不截图了。</p>
+			对于VBA的学习，这里不做介绍，请大家自行搜索学习（主要是我不会^_^） 教大家一些简单的方法： 大家可以根据需要先录制一部分宏，然后查看代码。 对比这些代码，找出其中相同的部分，然后进行模仿组合，就可快速学会一些简单的代码。 可以借助翻译软件来翻译部分“英文操作名”，还可以借助搜索找到类似的操作。 这里给大家放出我曾经使用的宏：
+
+
+
+			<h2>宏的执行</h2>
+			<p>通过上述的方法录制的宏的执行方法略有不同:</p>
+			<ul>
+				<li>“按钮宏”需单击“快速工具栏”中的对应宏</li>
+				<img src="快速宏执行.jpg" alt="快速宏执行.jpg" />
+				<li>而使用“键盘宏”需要按对用的快捷键即可</li>
+			</ul>
+			<p>这里再介绍一下“其他方式宏”（通用）的调用执行方法</p>
+			<ol>
+				<li>单击上述介绍的“查看宏”按钮，打开宏窗口</li>
+				<img src="宏查看运行.jpg" alt="宏查看运行.jpg" />
+				<li>在“宏名”下面的列表中，单击要运行的宏。</li>
+				<li>单击“运行”即可运行对应的宏。</li>
+				<p class="verb">在这里您还可以选择“单步执行”，会打开编程界面，您可以按【F5】继续运行宏</p>
+				<img src="宏单步执行.jpg" alt="宏单步执行.jpg" />
+			</ol>
+
+
+			<h2>宏文件的保存</h2>
+			<p>若想在不同的电脑使用相同的宏处理，需要将宏保存成文件。</p>
+			<ol>
+				<li>在『文件选项卡』~ 【另存为】后缀名为“*.docm”（启用宏的 Word 文档）或“*.dotm”（启用宏的 Word 模板）的文件。</li>
+				<li>复制这个文件到其他路径</li>
+				<li>之后打开该文件就可以使用其中的宏了</li>
+			</ol>
+
+			<h2>实例</h2>
+			<p>前面说了很多，但都是一些基础的操作方法，这里给出经过我亲自测试的宏动作来实现不同功能</p>
+			<ul>
+				<li>选择所有表格</li>
+				<pre>Sub 选择所有表格()
+
+    Dim tempTable As Table
+    Application.ScreenUpdating = False
+    If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then
+        MsgBox "文档已保护，此时不能选中多个表格！"
+        Exit Sub
+    End If
+    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone
+    For Each tempTable In ActiveDocument.Tables
+        tempTable.Range.Editors.Add wdEditorEveryone
+    Next
+    ActiveDocument.SelectAllEditableRanges wdEditorEveryone
+    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone
+    Application.ScreenUpdating = True
+
+End Sub</pre>
+
+				<img src="选择所有表格.gif" alt="选择所有表格.gif" />
+
+				<li>非嵌入式图片转为嵌入式图片</li>
+				<p>我们都知道在Word中的查找与替换中，通配符“^g”只能匹配嵌入式图片，而且在word中嵌入式图片就像文字一样，可以很好得编辑。如何将非嵌入式图片转为嵌入式图片呢？</p>
+
+				<pre>Sub 非嵌入式图片转为嵌入式图片()
+Dim oShape As Shape
+For Each oShape In ActiveDocument.Shapes
+oShape.ConvertToInlineShape
+Next
+End Sub</pre>
+
+				<p>如果想修改图片的大小，可以使用这两个宏命令</p>
+				<pre>Sub setpicsize() '设置图片大小
+Dim n '图片个数
+On Error Resume Next '忽略错误
+For n = 1 To ActiveDocument.InlineShapes.Count 'InlineShapes类型图片
+	ActiveDocument.InlineShapes(n).Height = 400 '设置图片高度为 400px
+	ActiveDocument.InlineShapes(n).Width = 300 '设置图片宽度 300px
+Next n
+For n = 1 To ActiveDocument.Shapes.Count 'Shapes类型图片
+	ActiveDocument.Shapes(n).Height = 400 '设置图片高度为 400px
+	ActiveDocument.Shapes(n).Width = 300 '设置图片宽度 300px
+Next n
+End Sub</pre>
+
+				<p class="verb">嵌入式会根据比例来更改大小，非嵌入式会根据具体数据来更改大小</p>
+				<pre>Sub setpicsize() '设置图片大小
+Dim n '图片个数
+On Error Resume Next '忽略错误
+For n = 1 To ActiveDocument.InlineShapes.Count 'InlineShapes类型图片
+	ActiveDocument.InlineShapes(n).Height = 400 '设置图片高度为 400px
+	ActiveDocument.InlineShapes(n).Width = 300 '设置图片宽度 300px
+Next n
+For n = 1 To ActiveDocument.Shapes.Count 'Shapes类型图片
+	ActiveDocument.Shapes(n).Height = 400 '设置图片高度为 400px
+	ActiveDocument.Shapes(n).Width = 300 '设置图片宽度 300px
+Next n
+End Sub</pre>
+
+
+				<pre> Sub 设置图片缩放()
+Dim n '图片个数
+Dim picwidth
+Dim picheight
+On Error Resume Next '忽略错误
+For n = 1 To ActiveDocument.InlineShapes.Count 'InlineShapes类型图片
+    picheight = ActiveDocument.InlineShapes(n).Height
+    picwidth = ActiveDocunent.InlineShapes(n).Width
+    ActiveDocument.InlineShapes(n).Height = picheight * 1.1 '设置高度为1.1倍
+    ActiveDocument.InlineShapes(n).Width = picwidth * 1.1 '设置宽度为1.1倍
+Next n
+For n = 1 To ActiveDocument.Shapes.Count 'Shapes类型图片
+    picheight = ActiveDocument.Shapes(n).Height
+    picwidth = ActiveDocument.Shapes(n).Width
+    ActiveDocument.Shapes(n).Height = picheight * 1.1 '设置高度为1.1倍
+    ActiveDocument.Shapes(n).Width = picwidth * 1.1 '设置宽度为1.1倍
+Next n
+End Sub</pre>
+				<br />
+				<li>改变所有C语言中的关键字颜色及字体格式（多个词汇统一替换为相同格式）</li>
+				<p>在学习C语言过程中，老师让我们上交每个程序的代码，但将代码复制到word中会失去之前的颜色（因为这部分是IDE所自有的），但上交一份美观的代码不是更好吗？要让文字能够复制，且其颜色与编辑器同步，但C语言的程序有很多，一个一个更改会浪费大量的时间，下面的这段代码会将C语言的所有关键字更改统一颜色</p>
+				<p class="verb">在查找与替换过程中由于有注释的存在，需将注释这部分放在最后</p>
+				<pre>Sub 改变字符串数组颜色()
+'
+'
+    Selection.Find.ClearFormatting
+Selection.Find.Replacement.ClearFormatting
+    With Selection.Find.Replacement.Font
+        .Size = 12'字号
+        .Bold = True'粗体
+        .Color = wdColorAutomatic'自动颜色
+    End With
+  Dim arr()
+   arr = Array("&lt;int&gt;", "&lt;float&gt;", "&lt;char&gt;", "&lt;return&gt;", "&lt;double&gt;", "&lt;if&gt;", "&lt;else&gt;", "&lt;for&gt;", "&lt;switch&gt;", "&lt;case&gt;", "&lt;break&gt;", "&lt;do&gt;", "&lt;while&gt;", "&lt;long&gt;", "&lt;typedef&gt;", "&lt;short&gt;", "&lt;unsigned&gt;", "&lt;auto&gt;", "&lt;continue&gt;", "&lt;signed&gt;", "&lt;struct&gt;", "&lt;void&gt;", "&lt;default&gt;", "&lt;goto&gt;", "&lt;sizeof&gt;", "&lt;volatile&gt;", "&lt;static&gt;", "&lt;enum&gt;", "&lt;register&gt;", "&lt;extern&gt;", "&lt;union&gt;", "&lt;const&gt;")'在""中输入想要查找的词语或表达式
+   For i = 0 To 31'31为上面的个数-1
+     With Selection.Find
+        .Text = arr(i)
+        .Replacement.Text = "^&amp;"'替换内容为查找框的内容
+        .Forward = True'向上匹配
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchCase = True'匹配大小写
+        .MatchWholeWord = False'全字匹配
+        .MatchByte = False
+        .MatchWildcards = True'使用通配符
+        .MatchSoundsLike = False'同音（英文）
+        .MatchAllWordForms = False'查找单词的所有形式（英文）
+    End With
+Selection.Find.Execute Replace:=wdReplaceAll'全部替换
+    Next i
+End Sub
+</pre>
+
+				<li>中英文符号对应替换（两段文本对应替换）</li>
+				<p>有时候我们在中英文切换过程中忽略了标点的中英文，比如在论文中我们会插入一些英文学术关键词之后可能将后面的“，”打为“,”，这是不符合论文规范的，如何将英文标点与中文标点互相转化呢？</p>
+				<pre>Sub ToggleInterpunction() '中英文标点互换
+'
+'
+'
+Dim ChineseInterpunction() As Variant, EnglishInterpunction() As Variant
+Dim myArray1() As Variant, myArray2() As Variant, strFind As String, strRep As String
+Dim msgResult As VbMsgBoxResult, N As Byte
+'定义一个中文标点的数组对象
+ChineseInterpunction = Array("、", "。", "，", ";", "：", "？", "！", "……", "—", "～", "（", "）", "《", "》","￥")
+'定义一个英文标点的数组对象
+EnglishInterpunction = Array(",", ".", ",", ";", ":", "?", "!", "…", "-", "~", "(", ")", "<", ">","$")
+'提示用户交互的MSGBOX对话框
+msgResult = MsgBox("您正在使用中英标点互换功能，按Y将中文标点转为英文标点,按N将英文标点转为中文标点!退出请点击右上角关闭按钮", vbYesNoCancel)
+Select Case msgResult
+Case vbCancel
+Exit Sub '如果用户选择了取消按钮,则退出程序运行
+Case vbYes '如果用户选择了YES,则将中文标点转换为英文标点
+myArray1 = ChineseInterpunction
+myArray2 = EnglishInterpunction
+strFind = "“(*)”"
+strRep = """\1"""
+Case vbNo '如果用户选择了NO,则将英文标点转换为中文标点
+myArray1 = EnglishInterpunction
+myArray2 = ChineseInterpunction
+strFind = """(*)"""
+strRep = "“\1”"
+End Select
+Application.ScreenUpdating = False '关闭屏幕更新
+For N = 0 To UBound(ChineseInterpunction) '从数组的下标到上标间作一个循环
+With ActiveDocument.Content.Find
+.ClearFormatting '不限定查找格式
+.MatchWildcards = False '不使用通配符
+'查找相应的英文标点,替换为对应的中文标点
+.Execute findtext:=myArray1(N), replacewith:=myArray2(N), Replace:=wdReplaceAll
+End With
+Next
+With ActiveDocument.Content.Find
+.ClearFormatting '不限定查找格式
+.MatchWildcards = True '使用通配符
+.Execute findtext:=strFind, replacewith:=strRep, Replace:=wdReplaceAll
+End With
+Application.ScreenUpdating = True '恢复屏幕更新
+End Sub</pre>
+			</ul>
+
+
+
+		</div>
+
+		<div class="end">
+			需要特殊说明一下：
+			<blockquote> Visual Basic for Applications (VBA)，是 Microsoft Office 里的一种编程语言. 但由上面的定义，它完全不是一种宏语言。然而，它的功能已经从中发展并最终替代了用户应用程序的宏思想，所以他被广泛地错误地称为是一种宏语言。 VBA 可以访问许多操作系统函数并支持文档打开时自动执行宏。这使得用这种语言写计算机病毒成为可能。</blockquote>
+		</div>
+		</artcle>
+		<aside>
+		</aside>
+
+		<script src="../../js/jquery-1.7.2.min.js"></script>
+		<script src="../../js/article.js"></script>
+		<script src="../../js/highlight.pack.js"></script>
+		<script>
+		hljs.initHighlightingOnLoad();
+		</script>
+</body>
+
+</html>

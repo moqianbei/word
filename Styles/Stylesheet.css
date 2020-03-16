@@ -1,0 +1,901 @@
+/* 字体声明 */
+
+/* 黑体 */
+@font-face {
+    font-family: "黑体";
+    src: local("ht"), local("信黑 W4"), local("信黑"), local("微软雅黑"), local("雅黑"), local("STHeiti"), local("STHei"), local("MYing Hei S"), local("TBGothic"), local("Heiti"), local("Heiti SC"), local("Heiti TC"), local("DK-HEITI"), url("../Fonts/SourceHanSansSC-Regular.ttf");
+}
+
+/* 楷体 */
+@font-face {
+    font-family: "楷体";
+    src: local("kt"), local("KaiTi"), local("STKaiti"), local("STKai"), local("楷体"), local("楷体_GB18030"), local("楷体_GB2312"), local("Kaiti"), local("Kaiti SC"), local("Kaiti TC"), local("MKai PRC"), local("MKaiGB18030C-Medium"), local("MKaiGB18030C-Bold"), local("DK-KAITI");
+}
+
+/* 宋体 */
+@font-face {
+    font-family: "宋体";
+    src: local("st"), local("st"), local("SongTi"), local("Songti"), local("正文"), local("宋体"), local("明体"), local("Songti"), local("Songti SC"), local("Songti TC"), local("STSongti"), local("STSong"), local("Song S"), url("../Fonts/SourceHanSerifCN-Regular.ttf");
+}
+
+/*汉仪新人文宋*/
+@font-face {
+    font-family: "汉仪新人文宋";
+    /*定义字体名称*/
+    src: url("../Fonts/HanYiXinRenWenSong.ttf");
+    /*链接字体资源*/
+}
+
+/*
+::-webkit-scrollbar{display: none;}
+*/
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    /* Firefox 4 */
+
+    -webkit-transition: all 0.4s ease;
+    /* Safari 和 Chrome */
+
+    -o-transition: all 0.4s ease;
+    /* Opera */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    /* Firefox 4 */
+
+    -webkit-transition: all 0.4s ease;
+    /* Safari 和 Chrome */
+
+    -o-transition: all 0.4s ease;
+    /* Opera */
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes bounceInRight {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInRight {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+
+@-webkit-keyframes bounceInUp {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+/* 全局属性 */
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #2f2f2f;
+    letter-spacing: 0.1rem;
+}
+
+body {
+    font-size: 15px;
+    background: #efefef;
+}
+
+section {
+    width: 768px;
+    margin: 0 auto;
+    min-height: 1366px;
+}
+
+
+h2~progress {
+    width: 100%;
+    height: 0.6rem;
+    color: #f00;
+    background: #EFEFF4;
+    border-radius: 0.1rem;
+    margin: 0.8rem 0 1rem 0;
+}
+
+/* 表示总长度背景色 */
+h2~progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 50px;
+}
+
+/* 表示已完成进度背景色 */
+h2~progress::-webkit-progress-value {
+    background: #2A5699;
+    border-radius: 50px;
+}
+
+
+
+h3~progress {
+    width: 100%;
+    height: 0.3rem;
+    color: #f00;
+    background: #EFEFF4;
+    border-radius: 0.1rem;
+}
+
+h3~progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 50px;
+}
+
+h3~progress::-webkit-progress-value {
+    background: #4472C4;
+    border-radius: 50px;
+}
+
+p,
+li,
+summary {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: "宋体";
+    list-style: none;
+}
+
+
+/* 超链接 */
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* ------- 标题 -------- */
+
+/* 一级标题 第0部分 */
+h2 {
+
+    height: 30px;
+    line-height: 30px;
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 3rem 0 0 0;
+    color: #2A5699;
+    /*text-align: center;*/
+    /*margin: 3rem 0 1rem 0;*/
+    /*border-bottom: 3px double #1489a3;*/
+
+}
+
+
+
+/* 二级标题 1.1 */
+h3 {
+    margin: 2rem 0 0 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4472C4;
+    text-align: left;
+    font-family: "黑体";
+}
+
+
+/* 三级标题 1.1.1 */
+h4 {
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: "黑体";
+}
+
+/*　四级标题　（一）*/
+h5 {
+    margin: 1rem 0 .8rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    font-family: "黑体";
+}
+
+
+/*五级标题*/
+
+h6 {
+    margin: 1rem 0 0.8rem 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+
+/*正文编号样式*/
+
+
+section#mainContent {
+    counter-reset: h2num -1;
+    /*从0开始编号*/
+}
+
+
+section#mainContent h2 {
+
+    counter-reset: h3num 0 picnum 0 tablenum 0;
+}
+
+section#mainContent h3 {
+    counter-reset: h4num 0;
+}
+
+
+
+section#mainContent h2:before {
+    counter-increment: h2num;
+    /*设置自增为1,否则会重复编号*/
+    content: "第"counter(h2num)"部分　";
+}
+
+section#mainContent h3:before {
+    counter-increment: h3num;
+    content: counter(h2num) "."counter(h3num) " ";
+}
+
+section#mainContent h4:before {
+    counter-increment: h4num;
+    content: counter(h2num) "."counter(h3num) "."counter(h4num)" ";
+}
+
+
+
+/* --------- 正文 ----------- */
+
+/* 正文段落 */
+p {
+    margin: .85rem 0;
+    /* 段间距 */
+    font-family: "宋体";
+    /* 行间距 */
+    text-align: justify;
+    text-justify: inter-ideograph;
+    word-break: break-all;
+}
+
+
+p.tips,
+p.warning,
+p.stop,
+p.note {
+    font-size: .95rem;
+    padding: .25rem .5rem;
+    margin: .65rem 0em;
+    font-family: "楷体";
+    text-indent: 1rem;
+}
+
+
+
+p.tips:before,
+p.warning:before,
+p.stop:before,
+p.note:before {
+    content: "注：";
+}
+
+/* 提示段 */
+p.tips {
+    border-left: 4px solid #9B9;
+    background: #E6FFE6;
+    color: #005500;
+}
+
+
+/* 警告段 */
+p.warning {
+    border-left: 4px solid #FFA000;
+    background: #FFF8E6;
+    color: #C05500;
+}
+
+
+/* 禁止段 */
+p.stop {
+    border-left: 4px solid #ef475d;
+    background-color: #fdecee;
+    color: red;
+}
+
+/* 解释段 */
+p.note {}
+
+
+
+
+/* 上标 */
+sub {}
+
+/* 下标 */
+sup {}
+
+
+/* 行间注（饕餮） */
+ruby {
+    ruby-align: center;
+}
+
+ruby rt {
+    font-family: "汉仪新人文宋";
+    font-size: .55rem;
+    color: #a52a2a;
+}
+
+
+/* 块注 */
+
+
+figure {
+    margin: 1.5rem 0 1rem 0;
+}
+
+
+/* 题注 */
+
+figure>figcaption {
+    text-align: center;
+    margin: 0.7rem 0 1.2rem 0;
+
+}
+
+
+/* 图注 */
+figure.img figcaption:before {
+    counter-increment: picnum;
+    content: "图"counter(h2num) "-"counter(picnum) " ";
+}
+
+
+/* 图片 */
+figure>img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+/* 表注 */
+table caption:before {
+
+    counter-increment: tablenum;
+    content: "表"counter(h2num) "-"counter(tablenum) " ";
+}
+
+
+
+
+
+/* 长引用 */
+blockquote {}
+
+/* 短引用 */
+q {
+    quotes: "「""」";
+    font-family: "黑体";
+}
+
+
+ol,
+ul {
+    list-style-position: inside;
+    /* 列表项目标记放置在文本以内，且环绕文本根据标记对齐 */
+}
+
+li {
+    /*margin-left: 0em;*/
+    /*左侧缩进*/
+    text-indent: 0rem;
+    /*首行缩进*/
+
+}
+
+/* 有序列表 */
+ol>li {}
+
+/* 无需列表 */
+ul>li {}
+
+/* 表格 */
+table {}
+
+/* 音频 */
+audio {}
+
+/* 视频 */
+video {}
+
+
+/* 行内特殊文字 */
+span {}
+
+/* 行内地址 */
+span.webAdress {}
+
+/* 行内输入、输出文字 */
+span.text {
+    padding: 2px .5rem;
+    border: 1px solid #ABADB3;
+    line-height: 2rem;
+    margin: 0 3px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+/* 文件名称 */
+span.fileName {}
+
+/* 文件路径 */
+span.fliePath,
+span.setPath {
+    font-family: "黑体";
+}
+
+/* 文件路径+名称 */
+span.file:before {
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("../文件.png") no-repeat;
+    background-size: 1rem 1rem;
+    padding:0 0.2rem 0 0.2rem;
+}
+
+/* 行内强调 */
+strong {}
+
+/* 击键 */
+kbd {
+    margin: 0 3px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    box-shadow: 1px 1px 1px #999;
+    border-radius: 4px;
+    text-transform: capitalize;
+    /* 强制首字母大写 */
+}
+
+b {
+    font-weight: normal;
+    color: #000;
+    background: #ffa;
+}
+
+table {
+    margin: 1.4rem 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+table tbody tr:nth-child(odd) {
+    background: transparent;
+}
+
+table tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+table th {
+    background: #e0e0e0;
+    padding: 8px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+tbody tr td {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 1.2rem;
+    border: 1px solid #ddd;
+}
+
+tfoot tr td {
+    padding: 10px 0 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* 封面页特殊配置 */
+
+section.cover {
+    width: 768px;
+    height: 1366px;
+    box-sizing: border-box;
+    padding: 100px 20px;
+    background: #fff;
+}
+
+.version {
+    width: 100px;
+    display: block;
+    position: relative;
+    top: 100px;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #7f7f7f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.version:before {
+    content: '';
+    border-bottom: solid 3px #404040;
+    width: 100%;
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+.version:after {
+    content: '';
+    border-top: solid 3px #404040;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.version .dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #5f5f5f;
+    margin: 3px 5px;
+}
+
+section.cover div {
+    width: 100%;
+    background: #295498;
+    margin: 35% auto;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: left;
+    letter-spacing: 0px;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: .4rem;
+    font-weight: 100;
+    font-family: "楷体";
+}
+
+h1 span {
+    color: #fff;
+}
+
+h1 span:nth-of-type(1) {
+    font-family: "黑体";
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+h1 span:nth-of-type(2) {
+    font-weight: 500;
+    font-family: "楷体";
+    font-size: 1.5rem;
+}
+
+h1 span:nth-of-type(3) {
+    font-weight: normal;
+    font-family: "楷体";
+    font-size: 1rem;
+}
+
+
+.cover div p:nth-of-type(1) {
+    text-align: left;
+    text-indent: 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.cover div p:nth-of-type(2) {
+    text-align: left;
+    text-indent: 0;
+    color: #ddd;
+    line-height: 20px;
+    font-size: .8rem;
+}
+
+.cover>p {
+    color: #3f3f3f;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+ol.card {
+    background: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+ol.card li {
+    font-size: 0.8rem;
+}
+
+
+
+.author,
+.author img {
+    display: inline-block;
+    font-family: "楷体";
+    font-weight: bold;
+    height: 1rem;
+    margin: 0 .2rem;
+    padding: 0;
+}
+
+.cover {
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+#allNav {
+    position: fixed;
+    width: 270px;
+    height: 600px;
+    left: 1rem;
+    top: 1rem;
+    background: #ddd;
+    padding: 1rem;
+}
+
+
+#allNav * {
+    font-family: "黑体";
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+#navCategory {
+    overflow-y: scroll;
+    width: 287px;
+    height: 600px;
+    counter-reset: h2num -1;
+    /*从0开始编号*/
+}
+
+#navCategory li {
+    height: 1.8rem;
+}
+
+#navCategory a:hover {
+    /*color:#E0AD19;*/
+    border-bottom:3px solid #E0AD19;
+
+}
+
+
+.first_class_ul {
+    padding-left: 0rem;
+    counter-reset: h2num -1;
+}
+
+.second_class_ul {
+    padding-left: 1rem;
+    counter-reset: h3num 0;
+}
+
+.third_class_ul {
+    padding-left: 2rem;
+    counter-reset: h4num 0;
+
+}
+
+
+.first_class_ul li a:before {
+    counter-increment: h2num;
+    /*设置自增为1,否则会重复编号*/
+    content: "第"counter(h2num)"部分　";
+}
+
+.second_class_ul li a:before {
+    counter-increment: h3num;
+    content: counter(h2num) "."counter(h3num) " ";
+}
+
+.third_class_ul li a:before {
+    counter-increment: h4num;
+    content: counter(h2num) "."counter(h3num) "."counter(h4num)" ";
+}
+
+
+
+/* 整篇文档的位置信息 */
+
+section,
+section.cover {
+    margin-left: 380px;
+}

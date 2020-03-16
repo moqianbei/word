@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>快速录入公式</title>
+    <link rel="stylesheet" href="../Styles/Stylesheet.css" />
+</head>
+
+<body>
+
+    <article>
+
+        <section class="cover">
+            <span class="version"><span class="dot"></span>网页版<span class="dot"></span></span>
+            <div>
+                <h1><span>Microsoft Word</span><br /><span>论文排版</span>——<span>完全指南</span></h1>
+                <hr />
+                <p>系统学习论文排版</p>
+                <p>详细介绍在Microsoft Word中进行排版论文时，<br />你需要掌握的基础知识、常用操作，让你少走弯路。</p>
+            </div>
+
+            <p><span class="author"><a href=""><img src="../Images/莫浅北.png" alt="莫浅北"/></a></span>编著</p>
+        </section>
+
+        <section>
+
+
+            <p>我们使用插入公式的方法，对于一些需要插入大量公式的文章或书籍来说，就显得力不从心。而科学界一般使用LaTeX进行公式输入，但这种方法需要编程，而最主要的是，它同我们看见的不太一样，比如我们输入(a+b)/c这个公式，LaTeX需要这样：</p>
+            <p>\frac{a + b}{c}</p>
+            <p>如果你对frac和其他表示运算的符号不懂，就会非常麻烦。</p>
+            <p>我也一直在寻找这样一个即可以简单输入，所见似所得，而且不需要鼠标一个一个点击的方法。直到我在B站找到一个<a href="">视频</a>，视频介绍了使用Unicode进行输入的方法，很好地满足了我这一需求。在此表示感谢。</p>
+            <p>不过，视频中没有介绍全面，比如重积分和矢量符号等，没给出具体的说明，但给了一个参考文档，而我又在网上找到一些常用的数学、物理公式，对其所涉及的知识点进行了归类，下面就教给大家。</p>
+            <p>我们知道，使用点选的方式，输入公式，无非是输入如下的结构和符号：</p>
+            <p>符号：希腊字母、字母类符号、运算符、箭头、手写体、求反关系运算符、几何图形。</p>
+
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/希腊字母.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/字母类符号.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/运算符符号.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/箭头.jpg" alt="" />
+            </figure>
+
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/手写体.jpg" alt="" />
+            </figure>
+
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/求反关系运算符.jpg" alt="" />
+            </figure>
+
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/几何图形.jpg" alt="" />
+            </figure>
+
+            <p>结构：</p>
+
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/分式.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/上下标.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/根式.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/微积分.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/大型运算符.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/括号.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/函数.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/矩阵.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/极限和对数.jpg" alt="" />
+            </figure>
+            <figure>
+                <figcaption></figcaption>
+                <img src="../Images/结构运算符.jpg" alt="" />
+            </figure>
+
+            <br />
+            <br />
+
+            <table>
+
+                <caption>希腊字母</caption>
+                <tbody>
+                    <tr>
+                        <th>序号</th>
+                        <th>小写</th>
+                        <th>英文</th>
+                        <th>英语音标注音</th>
+                        <th>汉语名称</th>
+                        <th>大写</th>
+                        <th>常用指代意义</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>α</td>
+                        <td>alpha</td>
+                        <td>/'ælfə/</td>
+                        <td>阿尔法</td>
+                        <td>Α</td>
+                        <td>角度、系数、角加速度、第一个、电离度、转化率</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>β</td>
+                        <td>beta</td>
+                        <td>/'bi:tə/ 或 /'beɪtə/</td>
+                        <td>贝塔</td>
+                        <td>Β</td>
+                        <td>磁通系数、角度、系数</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>γ</td>
+                        <td>gamma</td>
+                        <td>/'gæmə/</td>
+                        <td>伽玛</td>
+                        <td>Γ</td>
+                        <td>电导系数、角度、比热容比</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>π</td>
+                        <td>pi</td>
+                        <td>/paɪ/</td>
+                        <td>派</td>
+                        <td>∏</td>
+                        <td>圆周率、π(n)表示不大于n的质数个数、连乘</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>ω</td>
+                        <td>omega</td>
+                        <td>/'əʊmɪɡə/或 /oʊ'meɡə/</td>
+                        <td>奥米伽/欧米伽</td>
+                        <td>Ω</td>
+                        <td>欧姆、角速度、角频率、交流电的电角度、化学中的质量分数、不饱和度</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>θ</td>
+                        <td>theta</td>
+                        <td>/'θi:tə/</td>
+                        <td>西塔</td>
+                        <td>Θ</td>
+                        <td>温度、角度</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>λ</td>
+                        <td>lambda</td>
+                        <td>/'læmdə/</td>
+                        <td>拉姆达</td>
+                        <td>∧</td>
+                        <td>波长、体积、导热系数 普朗克常数</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>φ</td>
+                        <td>phi</td>
+                        <td>/faɪ/</td>
+                        <td>斐</td>
+                        <td>Φ</td>
+                        <td>磁通量、电通量、角、透镜焦度、热流量、电势、直径、欧拉函数</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>ρ</td>
+                        <td>rho</td>
+                        <td>/rəʊ/</td>
+                        <td>柔</td>
+                        <td>Ρ</td>
+                        <td>电阻率、柱坐标和极坐标中的极径、密度、曲率半径</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>σ,ς</td>
+                        <td>sigma</td>
+                        <td>/'sɪɡmə/</td>
+                        <td>西格马</td>
+                        <td>∑</td>
+                        <td>总和、表面密度、跨导、应力、电导率</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>η</td>
+                        <td>eta</td>
+                        <td>/'i:tə/</td>
+                        <td>伊塔</td>
+                        <td>Η</td>
+                        <td>迟滞系数、机械效率</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>μ</td>
+                        <td>mu</td>
+                        <td>/mju:/</td>
+                        <td>谬</td>
+                        <td>Μ</td>
+                        <td>磁导率、微、动摩擦系（因）数、流体动力黏度、货币单位,莫比乌斯函数</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>δ</td>
+                        <td>delta</td>
+                        <td>/'deltə/</td>
+                        <td>得尔塔</td>
+                        <td>Δ</td>
+                        <td>变化量、焓变、熵变、屈光度、一元二次方程中的判别式、化学位移</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>τ</td>
+                        <td>tau</td>
+                        <td>/tɔ:/ 或 /taʊ/</td>
+                        <td>陶</td>
+                        <td>Τ</td>
+                        <td>时间常数、切应力、2π（两倍圆周率）</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>ξ</td>
+                        <td>xi</td>
+                        <td>希腊 /ksi/英美 /ˈzaɪ/ 或 /ˈsaɪ/</td>
+                        <td>克西</td>
+                        <td>Ξ</td>
+                        <td>随机变量、（小）区间内的一个未知特定值</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>ε</td>
+                        <td>epsilon</td>
+                        <td>/'epsɪlɒn/</td>
+                        <td>艾普西隆</td>
+                        <td>Ε</td>
+                        <td>对数之基数、介电常数、电容率、应变</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>ν</td>
+                        <td>nu</td>
+                        <td>/nju:/</td>
+                        <td>纽</td>
+                        <td>Ν</td>
+                        <td>磁阻系数、流体运动粘度、光波频率、化学计量数</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>υ</td>
+                        <td>upsilon</td>
+                        <td>/ˈipsɪlon/或 /ˈʌpsɪlɒn/</td>
+                        <td>阿普西龙</td>
+                        <td>Υ</td>
+                        <td>位移</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>κ</td>
+                        <td>kappa</td>
+                        <td>/'kæpə/</td>
+                        <td>卡帕</td>
+                        <td>Κ</td>
+                        <td>介质常数、绝热指数</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>χ</td>
+                        <td>chi</td>
+                        <td>/kaɪ/</td>
+                        <td>希</td>
+                        <td>Χ</td>
+                        <td>统计学中有卡方(χ^2)分布</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>ψ</td>
+                        <td>psi</td>
+                        <td>/ps/</td>
+                        <td>普西</td>
+                        <td>Ψ</td>
+                        <td>角速、介质电通量、ψ函数、磁链</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>ι</td>
+                        <td>iota</td>
+                        <td>/aɪ'əʊtə/</td>
+                        <td>幺塔</td>
+                        <td>Ι</td>
+                        <td>微小、一点</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>ζ</td>
+                        <td>zeta</td>
+                        <td>/'zi:tə/</td>
+                        <td>泽塔</td>
+                        <td>Ζ</td>
+                        <td>系数、方位角、阻抗、相对黏度</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>ο</td>
+                        <td>omicron</td>
+                        <td>/əuˈmaikrən/或 /ˈɑmɪˌkrɑn/</td>
+                        <td>奥米克戎</td>
+                        <td>Ο</td>
+                        <td>高阶无穷小函数</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            <h2></h2>
+        </section>
+        <section>
+
+            我们这里用几个具体的案例来说明一下：
+
+            <ul>
+
+                <li>word会自动更正</li>
+
+                这里我列举了可以自动更正的符号：也就是不需要任何附加输入，软件会自动更正。
+
+                <table>
+                    <caption>自动更正符号</caption>
+                    <tbody>
+                        <tr>
+                            <th>序号</th>
+                            <th>自动更正前</th>
+                            <th>自动更正后</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-&gt;</td>
+                            <td>→</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>&gt;=</td>
+                            <td>≥</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>&lt;=</td>
+                            <td>≤
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>/=</td>
+                            <td>≠</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>\=</td>
+                            <td>=</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>~=</td>
+                            <td>≌</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>-+</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>+-</td>
+                            <td>±</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+                <table>
+                    <caption>自动更正符号</caption>
+                    <tbody>
+                        <tr>
+                            <th>序号</th>
+                            <th>名称</th>
+                            <th>欲录入公式</th>
+                            <th>输入字符</th>
+                            <th>备注</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>横线分数</td>
+                            <td><img src="../Images/横线分数.png" alt="" /></td>
+                            <td><span class="text">a/b&nbsp;</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>数学除号</td>
+                            <td><img src="../Images/数学除号.png" alt="" /></td>
+                            <td><span class="text">a\div&nbsp;b=c</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>多段除法</td>
+                            <td><img src="../Images/多段除法.png" alt="" /></td>
+                            <td><span class="text">(a/(b+c))/(d/e+f)&nbsp;</span></td>
+                            <td>使用括号进行分组</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>错位除法</td>
+                            <td><img src="../Images/错位除法.png" alt="" /></td>
+                            <td><span class="text">a\sdiv&nbsp;b</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>正位除法</td>
+                            <td><img src="../Images/正位除法.png" alt="" /></td>
+                            <td><span class="text">(a/(b+c))&nbsp;\ldiv&nbsp;(d/e+f)&nbsp;</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>上下标</td>
+                            <td><img src="../Images/上下标.png" alt="" /></td>
+                            <td><span class="text">a_1^2&nbsp;</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>求和堆叠对象</td>
+                            <td><img src="../Images/求和堆叠对象.png" alt="" /></td>
+                            <td><span class="text">(a+b)^n&nbsp;=\sum&nbsp;_(k=0)^n&nbsp;(n\atop&nbsp;k&nbsp;)a^kb^(n-k)</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>微积分符号</td>
+                            <td><img src="../Images/微积分.png" alt="" /></td>
+                            <td><span class="text">\int&nbsp;_0^1&nbsp;x\dd&nbsp;x=1/2</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>矩阵</td>
+                            <td><img src="../Images/上下标.png" alt="" /></td>
+                            <td><span class="text">\matrix&nbsp;(a&amp;b&amp;c@d&amp;e&amp;f)&nbsp;</span></td>
+                            <td>注意用括号包裹矩阵的内容区域；可以利用矩阵进行对齐</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>10</td>
+                            <td>字符串</td>
+                            <td><img src="../Images/字符串.png" alt="" /></td>
+                            <td><span class="text">"rate"="distance"/'time'&nbsp;</span></td>
+                            <td>单双引号均可，但一定为西文</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>乘幂号</td>
+                            <td><img src="../Images/乘幂号.png" alt="" /></td>
+                            <td><span class="text">r\hat&nbsp;&nbsp;</span></td>
+                            <td>两次空格</td>
+                        <tr>
+                            <td>12</td>
+                            <td>绝对值与大括号</td>
+                            <td><img src="../Images/绝对值与大括号.png" alt="" /></td>
+                            <td><span class="text">|x|&nbsp;={\matrix&nbsp;(x&amp;x&gt;=0@-x&amp;x&lt;0)&nbsp;}&nbsp;=|-x|&nbsp;</span></td>
+                            <td></td>
+                        <tr>
+                            <td>13</td>
+                            <td>关闭匹配</td>
+                            <td><img src="../Images/关闭匹配.png" alt="" /></td>
+                            <td><span class="text">|x|&nbsp;={\matrix&nbsp;(x&amp;x&gt;=0@-x&amp;x&lt;0)&nbsp;}&nbsp;\close&nbsp;&nbsp;</span></td>
+                            <td></td>
+
+                        <tr>
+                            <td>14</td>
+                            <td>2~4次根式</td>
+                            <td><img src="../Images/常见根式.jpg" alt="" /></td>
+                            <td><span class="text">\sqrt&nbsp;(a+b)&nbsp;</span><br /><br />
+                            <span class="text">\cbrt&nbsp;(a+b)&nbsp;</span><br /><br />
+                            <span class="text">\qdrt&nbsp;(a+b)&nbsp;</span></td>
+                            <td></td>
+
+                        <tr>
+                            <td>10</td>
+                            <td>任意次根式</td>
+                            <td><img src="../Images/N次根式.png" alt="" /></td>
+                            <td><span class="text">\sqrt&nbsp;(8&amp;(a+b))&nbsp;</span></td>
+                            <td></td>
+
+
+                    </tbody>
+                </table>
+
+
+                <li>重积分</li>
+
+                这部分待验证
+                <li>矢量</li>
+
+
+                <li>上大括号</li>
+
+                <li>下大括号</li>
+
+
+                <li>居中</li>
+
+                <li>三点省略</li>
+
+                <li>编号自动对齐</li>
+
+                <li>均值</li>
+
+                <li>无穷</li>
+
+                <li>副本字符撇号</li>
+
+            </ul>
+        </section>
+    </article>
+
+</body>
+
+</html>

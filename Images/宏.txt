@@ -1,0 +1,106 @@
+﻿Sub 选择所有表格()
+
+    Dim tempTable As Table
+    Application.ScreenUpdating = False
+    If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then
+        MsgBox "文档已保护，此时不能选中多个表格！"
+        Exit Sub
+    End If
+    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone
+    For Each tempTable In ActiveDocument.Tables
+        tempTable.Range.Editors.Add wdEditorEveryone
+    Next
+    ActiveDocument.SelectAllEditableRanges wdEditorEveryone
+    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone
+    Application.ScreenUpdating = True
+
+End Sub
+
+
+--------------------------------------------------------------
+
+Sub 非嵌入式图片转为嵌入式图片()
+Dim oShape As Shape
+For Each oShape In ActiveDocument.Shapes
+oShape.ConvertToInlineShape
+Next
+End Sub
+
+----------------------------------------------------------------
+
+Sub 改变字符串数组颜色()
+'
+'
+    Selection.Find.ClearFormatting
+Selection.Find.Replacement.ClearFormatting
+    With Selection.Find.Replacement.Font
+        .Size = 12'字号
+        .Bold = True'粗体
+        .Color = wdColorAutomatic'自动颜色
+    End With
+  Dim arr()
+   arr = Array("&lt;int&gt;", "&lt;float&gt;", "&lt;char&gt;", "&lt;return&gt;", "&lt;double&gt;", "&lt;if&gt;", "&lt;else&gt;", "&lt;for&gt;", "&lt;switch&gt;", "&lt;case&gt;", "&lt;break&gt;", "&lt;do&gt;", "&lt;while&gt;", "&lt;long&gt;", "&lt;typedef&gt;", "&lt;short&gt;", "&lt;unsigned&gt;", "&lt;auto&gt;", "&lt;continue&gt;", "&lt;signed&gt;", "&lt;struct&gt;", "&lt;void&gt;", "&lt;default&gt;", "&lt;goto&gt;", "&lt;sizeof&gt;", "&lt;volatile&gt;", "&lt;static&gt;", "&lt;enum&gt;", "&lt;register&gt;", "&lt;extern&gt;", "&lt;union&gt;", "&lt;const&gt;")'在""中输入想要查找的词语或表达式
+   For i = 0 To 31'31为上面的个数-1
+     With Selection.Find
+        .Text = arr(i)
+        .Replacement.Text = "^&amp;"'替换内容为查找框的内容
+        .Forward = True'向上匹配
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchCase = True'匹配大小写
+        .MatchWholeWord = False'全字匹配
+        .MatchByte = False
+        .MatchWildcards = True'使用通配符
+        .MatchSoundsLike = False'同音（英文）
+        .MatchAllWordForms = False'查找单词的所有形式（英文）
+    End With
+Selection.Find.Execute Replace:=wdReplaceAll'全部替换
+    Next i
+End Sub
+
+
+----------------------------------------------------------------
+
+Sub ToggleInterpunction() '中英文标点互换
+'
+'
+Dim ChineseInterpunction() As Variant, EnglishInterpunction() As Variant
+Dim myArray1() As Variant, myArray2() As Variant, strFind As String, strRep As String
+Dim msgResult As VbMsgBoxResult, N As Byte
+'定义一个中文标点的数组对象
+ChineseInterpunction = Array("、", "。", "，", ";", "：", "？", "！", "……", "—", "～", "（", "）", "《", "》","￥")
+'定义一个英文标点的数组对象
+EnglishInterpunction = Array(",", ".", ",", ";", ":", "?", "!", "…", "-", "~", "(", ")", "<", ">","$")
+'提示用户交互的MSGBOX对话框
+msgResult = MsgBox("您正在使用中英标点互换功能，按Y将中文标点转为英文标点,按N将英文标点转为中文标点!退出请点击右上角关闭按钮", vbYesNoCancel)
+Select Case msgResult
+Case vbCancel
+Exit Sub '如果用户选择了取消按钮,则退出程序运行
+Case vbYes '如果用户选择了YES,则将中文标点转换为英文标点
+myArray1 = ChineseInterpunction
+myArray2 = EnglishInterpunction
+strFind = "“(*)”"
+strRep = """\1"""
+Case vbNo '如果用户选择了NO,则将英文标点转换为中文标点
+myArray1 = EnglishInterpunction
+myArray2 = ChineseInterpunction
+strFind = """(*)"""
+strRep = "“\1”"
+End Select
+Application.ScreenUpdating = False '关闭屏幕更新
+For N = 0 To UBound(ChineseInterpunction) '从数组的下标到上标间作一个循环
+With ActiveDocument.Content.Find
+.ClearFormatting '不限定查找格式
+.MatchWildcards = False '不使用通配符
+'查找相应的英文标点,替换为对应的中文标点
+.Execute findtext:=myArray1(N), replacewith:=myArray2(N), Replace:=wdReplaceAll
+End With
+Next
+With ActiveDocument.Content.Find
+.ClearFormatting '不限定查找格式
+.MatchWildcards = True '使用通配符
+.Execute findtext:=strFind, replacewith:=strRep, Replace:=wdReplaceAll
+End With
+Application.ScreenUpdating = True '恢复屏幕更新
+End Sub
+
